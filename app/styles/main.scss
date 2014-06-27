@@ -17,6 +17,7 @@ body {
     float: left;
     margin-left: 50px;
     margin-top: 20px;
+    font-family: "Peanut Butter Cookies", sans-serif;
 }
 
 .icons {
@@ -34,15 +35,52 @@ body {
     margin-left: 1000px;
 }
 
+.signup-button {
+  background: #85888a;
+  background-image: -webkit-linear-gradient(top, #85888a, #636363);
+  background-image: -moz-linear-gradient(top, #85888a, #636363);
+  background-image: -ms-linear-gradient(top, #85888a, #636363);
+  background-image: -o-linear-gradient(top, #85888a, #636363);
+  background-image: linear-gradient(to bottom, #85888a, #636363);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 260px;
+  margin-left: 572px;
+}
+
+.signup-button:hover {
+  background: #126396;
+  background-image: -webkit-linear-gradient(top, #126396, #0f4e78);
+  background-image: -moz-linear-gradient(top, #126396, #0f4e78);
+  background-image: -ms-linear-gradient(top, #126396, #0f4e78);
+  background-image: -o-linear-gradient(top, #126396, #0f4e78);
+  background-image: linear-gradient(to bottom, #126396, #0f4e78);
+  text-decoration: none;
+}
+
 .container {
     margin-left: 300px;
     margin-right: 300px;
     text-align: center;
-    margin-top: 700px;
+    margin-top: 400px;
 }
 
 .profiles h1 {
     margin-top: 50px;
+}
+
+.profile-photo img {
+    margin-left: -38px;
+}
+
+.info-one {
+    margin-top: 75px;
 }
 
 .info-one h1 {
@@ -55,12 +93,24 @@ body {
     display: inline-block;
 }
 
-.info-one-paragraph img {
+.info-one-paragraph img,  {
     width: 200px;
     height: 200px;
     position: absolute;
     margin-top: -60px;
     margin-left: 27px;
+}
+
+.info-three-paragraph img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top: -67px;
+    margin-left: -385px;
+}
+
+.info-two {
+    margin-top: 75px;
 }
 
 .info-two h1 {
@@ -80,6 +130,10 @@ body {
     margin-left: 190px;
 }
 
+.info-three {
+    margin-top: 75px;
+}
+
 .info-three h1 {
     margin-top: 50px;
     margin-left: 250px;
@@ -90,7 +144,78 @@ body {
 }
 
 .middle-image img {
-    margin-top: 50px;
+    margin-top: 100px;
     width: 100%;
     height: 380px;
 }
+
+.signup-button-two {
+  background: #85888a;
+  background-image: -webkit-linear-gradient(top, #85888a, #636363);
+  background-image: -moz-linear-gradient(top, #85888a, #636363);
+  background-image: -ms-linear-gradient(top, #85888a, #636363);
+  background-image: -o-linear-gradient(top, #85888a, #636363);
+  background-image: linear-gradient(to bottom, #85888a, #636363);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 360px;
+  margin-left: 225px;
+  position: absolute
+}
+
+.signup-button-two:hover {
+  background: #126396;
+  background-image: -webkit-linear-gradient(top, #126396, #0f4e78);
+  background-image: -moz-linear-gradient(top, #126396, #0f4e78);
+  background-image: -ms-linear-gradient(top, #126396, #0f4e78);
+  background-image: -o-linear-gradient(top, #126396, #0f4e78);
+  background-image: linear-gradient(to bottom, #126396, #0f4e78);
+  text-decoration: none;
+}
+
+.container-two {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.features-title h1 {
+    text-align: center;
+}
+
+.features h3 {
+    margin-left: 0px;
+}
+
+.features {
+    display: inline-block;
+}
+
+.features-two {
+    display: inline-block;
+    margin-left: 85px
+}
+
+.features-three {
+    display: inline-block;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
