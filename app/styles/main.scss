@@ -11,6 +11,10 @@ body {
     width: 100%;
     height: 50px;
     background-color: #E5E4E2; 
+
+    a {
+        color: black;
+    }
 }
 
 .information {
@@ -22,8 +26,9 @@ body {
 
 .icons {
     float: right;
-    margin-right: 50px;
-    margin-top: 17px;
+    margin-right: 85px;
+    margin-top: 11px;
+    word-spacing: 29px;
 }
 
 .main-image img {
@@ -182,6 +187,8 @@ body {
 .container-two {
     margin-left: 300px;
     margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .features-title h1 {
@@ -194,20 +201,43 @@ body {
 
 .features {
     display: inline-block;
+    margin-left: 40px;
 }
 
 .features-two {
     display: inline-block;
-    margin-left: 85px
+    margin-left: 85px;
 }
 
 .features-three {
     display: inline-block;
     position: absolute;
+    margin-left: 85px;
 }
 
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #595856; 
+}
 
+.social-media-links {
+    color: white;
+    float: left;
+    margin-left: 25px;
+    margin-top: -3px;
+}
 
+.copyright span {
+    float: right;
+    color:white;
+    margin-right: 85px;
+    margin-top: 70px;
+}
+
+.footer a {
+    color: white;
+}
 
 
 
