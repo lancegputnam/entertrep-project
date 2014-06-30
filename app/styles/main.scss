@@ -79,6 +79,7 @@ button {
 
 .first-paragraph, .second-paragraph, .info-one-paragraph, .info-two-paragraph, .info-three-paragraph, .social-media-links, .copyright {
     font-family: "GeosansLight", sans-serif;
+    font-size: 1.063em;
 }
 
 .first-title, .features-title, .info-one h1, .info-two h1, .info-three h1 {
@@ -178,8 +179,40 @@ button {
     margin: 3.125em 20% 3.125em 20%;
 }
 
+.vendor-profiles {
+    text-align: center;
+    font-family: "Code Bold", sans-serif;
+    margin: 10% 0 5% 0;
+}
+
+.vendor-image {
+    p {
+        margin-left: 45%;
+        margin-top: 6%;
+        display: inline-block;
+        font-family: "GeosansLight", sans-serif;
+        font-size: 1.063em;
+    }
+
+    img {
+        width: 28%;
+        position: absolute;
+        margin: -0.188em 0 0 -3%;
+    }
+}
+
+.vendor-examples {
+    margin-top: 20%;
+    text-align: center;
+
+    img {
+        width: 75%;
+    }
+}
+
 .features-title h1 {
     text-align: center;
+    margin-top: 10%;
 }
 
 .features {
@@ -209,6 +242,7 @@ button {
     width: 100%;
     height: 6.250em;
     background-color: #595856; 
+    margin-top: 5em;
 }
 
 .social-media-links {
