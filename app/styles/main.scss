@@ -68,7 +68,7 @@ button {
 }
 
 .signup-button-two {
-    margin: 22.50rem 0 0 20%;
+    margin: 22.50rem 0 0 35%;
     position: absolute
 }
 
@@ -77,8 +77,17 @@ button {
     text-align: center;
 }
 
+.first-paragraph, .second-paragraph, .info-one-paragraph, .info-two-paragraph, .info-three-paragraph, .social-media-links, .copyright {
+    font-family: "GeosansLight", sans-serif;
+}
+
+.first-title, .features-title, .info-one h1, .info-two h1, .info-three h1 {
+    font-family: "Code Bold", sans-serif;
+}
+
 .profiles h1 {
     margin-top: 3.125em;
+    font-family: "Code Bold", sans-serif;
 }
 
 .profile-photo img {
@@ -149,10 +158,19 @@ button {
     }
 }
 
-.middle-image img {
+.middle-image {
+    img {
     margin-top: 6.250em;
     width: 100%;
     height: 23.750em;
+    }
+
+    h1 {
+        font-family: "Code Bold", sans-serif;
+        color: white;
+        margin: 9.375em 0 0 4%;
+        position: absolute;
+    }
 }
 
 
@@ -167,6 +185,7 @@ button {
 .features {
     display: inline-block;
     margin-left: 1%;
+    font-family: "GeosansLight", sans-serif;
 
     h3{
         margin-left: 0%;
@@ -175,13 +194,15 @@ button {
 
 .features-two {
     display: inline-block;
-    margin-left: 12%;
+    margin-left: 16%;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .features-three {
     display: inline-block;
     position: absolute;
-    margin-left: 12%;
+    margin-left: 11%;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .footer {
@@ -206,49 +227,49 @@ button {
     color: white;
 }
 
- #tfnewsearch{
-     float:right;
-     padding:20px;
- }
+ // #tfnewsearch{
+ //     float:right;
+ //     padding:20px;
+ // }
 
- .tftextinput{
-     margin: 0;
-     padding: 5px 15px;
-     font-family: Arial, Helvetica, sans-serif;
-     font-size:14px;
-     border:1px solid #0076a3; border-right:0px;
-     border-top-left-radius: 5px 5px;
-     border-bottom-left-radius: 5px 5px;
- }
+ // .tftextinput{
+ //     margin: 0;
+ //     padding: 5px 15px;
+ //     font-family: Arial, Helvetica, sans-serif;
+ //     font-size:14px;
+ //     border:1px solid #0076a3; border-right:0px;
+ //     border-top-left-radius: 5px 5px;
+ //     border-bottom-left-radius: 5px 5px;
+ // }
 
- .tfbutton {
-     margin: 0;
-     padding: 5px 15px;
-     font-family: Arial, Helvetica, sans-serif;
-     font-size:14px;
-     outline: none;
-     cursor: pointer;
-     text-align: center;
-     text-decoration: none;
-     color: #ffffff;
-     border: solid 1px #0076a3; border-right:0px;
-     background: #0095cd;
-     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-     background: -moz-linear-gradient(top,  #00adee,  #0078a5);
-     border-top-right-radius: 5px 5px;
-     border-bottom-right-radius: 5px 5px;
- }
+ // .tfbutton {
+ //     margin: 0;
+ //     padding: 5px 15px;
+ //     font-family: Arial, Helvetica, sans-serif;
+ //     font-size:14px;
+ //     outline: none;
+ //     cursor: pointer;
+ //     text-align: center;
+ //     text-decoration: none;
+ //     color: #ffffff;
+ //     border: solid 1px #0076a3; border-right:0px;
+ //     background: #0095cd;
+ //     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+ //     background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+ //     border-top-right-radius: 5px 5px;
+ //     border-bottom-right-radius: 5px 5px;
+ // }
 
- .tfbutton:hover {
-     text-decoration: none;
-     background: #007ead;
-     background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
-     background: -moz-linear-gradient(top,  #0095cc,  #00678e);
- }
+ // .tfbutton:hover {
+ //     text-decoration: none;
+ //     background: #007ead;
+ //     background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+ //     background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+ // }
 
- .tfclear{
-     clear:both;
- }
+ // .tfclear{
+ //     clear:both;
+ // }
 
 
 
