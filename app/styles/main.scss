@@ -63,7 +63,8 @@ button {
 }
 
 .signup-button {
-    margin: 16.250rem 0 0 40%;
+    margin: -24.75rem 0 0 40%;
+    position: absolute;
 }
 
 .signup-button-two {
@@ -72,7 +73,7 @@ button {
 }
 
 .container {
-    margin: 25em 25% 0 25%;
+    margin: 4em 25% 0 25%;
     text-align: center;
 }
 
@@ -165,7 +166,7 @@ button {
 
 .features {
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 1%;
 
     h3{
         margin-left: 0%;
@@ -205,7 +206,49 @@ button {
     color: white;
 }
 
+ #tfnewsearch{
+     float:right;
+     padding:20px;
+ }
 
+ .tftextinput{
+     margin: 0;
+     padding: 5px 15px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size:14px;
+     border:1px solid #0076a3; border-right:0px;
+     border-top-left-radius: 5px 5px;
+     border-bottom-left-radius: 5px 5px;
+ }
+
+ .tfbutton {
+     margin: 0;
+     padding: 5px 15px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size:14px;
+     outline: none;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     color: #ffffff;
+     border: solid 1px #0076a3; border-right:0px;
+     background: #0095cd;
+     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+     background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+     border-top-right-radius: 5px 5px;
+     border-bottom-right-radius: 5px 5px;
+ }
+
+ .tfbutton:hover {
+     text-decoration: none;
+     background: #007ead;
+     background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+     background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+ }
+
+ .tfclear{
+     clear:both;
+ }
 
 
 
