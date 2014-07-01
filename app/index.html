@@ -46,7 +46,7 @@
             <div class="main-image">
                 <img src="https://farm6.staticflickr.com/5587/14329417467_dc19a66a23_o.jpg"></img>
             </div>
-            <button class="signup-button button"> Sign Up </button>
+            <a href="#" class="signup-button button"> Sign Up </a>
         </div>
 
         <div class="container">
@@ -155,10 +155,96 @@
             </div>
         </div>
 
+
+
+
+
+       <!--  <div class="home-container"></div>
+        <div class="signUp-container"> </div>
+        <div class="user-container"> </div>
+        <div class="vendor-container"> </div>
+        <div class="footer"> </div> -->
+
         <!---templates begin --> 
 
-      
+        <!---template for home page view --> 
+        <script type="text/template" class="home-template">
+            <div class="home-buttons">
+                <a href="#/login"><div class="login-button button">Login</div></a>
+                <a href="#/signup"><div class="signup-button button">Sign Up</div></a>
+            </div>
+        </script>
 
+        <!-- template for Sign Up View -->
+        <script type="text/template" class="sign-up-template">
+            <div class="sign-up">
+                <h1> Create an EnterTrep Account </h1>
+                <input type="text" class="username" placeholder="Username"/>
+                <input type="password" class="password" placeholder="Password"/>
+                <input type="email" class="email" placeholder="Email"/>
+                <input type="location" class="location" placeholder="City"/>
+                <select name="state">
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="DC">DC</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                </select>
+                <select name="industry-one">
+                    <option value="Apparel">Apparel</option>
+                    <option value="E-Commerce">E-Commerce</option>
+                    <option value="Social">Social</option>
+                    <option value="Education">Education</option>
+                </select>
+                <button class="sign-up-button button">Create Account</button>
+            </div> 
+        </script> 
         
 
 
@@ -185,6 +271,8 @@
         </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/model.js"></script>
+        <script src="scripts/views.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
