@@ -15,6 +15,10 @@ body {
     a {
         color: black;
     }
+
+    a:hover {
+        color: #2B547E;
+    }
 }
 
 .information {
@@ -51,7 +55,7 @@ body {
     padding: .625em 2% .625em 2%;
     text-decoration: none;
 
-  // button:hover {
+  // .button:hover {
   //   background: #126396;
   //   background-image: -webkit-linear-gradient(top, #126396, #0f4e78);
   //   background-image: -moz-linear-gradient(top, #126396, #0f4e78);
@@ -304,7 +308,6 @@ body {
  // .tfclear{
  //     clear:both;
  // }
-
 
 
 

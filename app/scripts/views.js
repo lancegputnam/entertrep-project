@@ -1,27 +1,35 @@
-"use strict";
+ // __      ___                   
+ // \ \    / (_)                  
+ //  \ \  / / _  _____      _____ 
+ //   \ \/ / | |/ _ \ \ /\ / / __|
+ //    \  /  | |  __/\ V  V /\__ \
+ //     \/   |_|\___| \_/\_/ |___/
+                               
 
-SignUpView = Parse.View.extend({
+// "use strict";
 
-	className: 'home-view',
+// SignUpView = Parse.View.extend({
 
-	signUpTemplate: _.template($('.home-template').text()),
+// 	className: 'home-view',
 
-	events: {
-		"click .signup-button" : "signupPage"
-	}
+// 	signUpTemplate: _.template($('.home-template').text()),
+
+// 	events: {
+// 		"click .signup-button" : "signupPage"
+// 	}
 	
-	initialize: function(){
-		$('.top-container').append(this.el);
-		this.render();
-	},
+// 	initialize: function(){
+// 		$('.top-container').append(this.el);
+// 		this.render();
+// 	},
 
-	render: function(){
-		this.$el.append(this.signUpTemplate());
-		// var renderedTemplate = this.imageTemplate(this.model.attributes);
-  //   	this.$el.html(renderedTemplate);
-	}
+// 	render: function(){
+// 		this.$el.append(this.signUpTemplate());
+// 		// var renderedTemplate = this.imageTemplate(this.model.attributes);
+//   //   	this.$el.html(renderedTemplate);
+// 	}
 
-	signupPage: function (){
-		
-	}
-});
+// 	signupPage: function (){
+
+// 	}
+// });
