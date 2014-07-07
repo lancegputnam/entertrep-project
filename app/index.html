@@ -29,12 +29,7 @@
 
         <div class="topbar">
             <div class="information"><span> Sign Up and Learn More </span> </div>
-           <!--  <div id="tfheader">
-                <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
-                </form>
-            <div class="tfclear"></div> -->
-<!--             </div>
- -->         <div class="icons">
+            <div class="icons">
                 <a href="www.facebook.com"><span class="mega-octicon octicon-home"></span></a>
                 <a href="www.facebook.com"><span class="mega-octicon octicon-repo"></span></a>
                 <a href="www.facebook.com"><span class="mega-octicon octicon-mail-read"></span></a>
@@ -160,100 +155,198 @@
 
 
 
-       <!--  <div class="home-container"></div>
-        <div class="signUp-container"> </div>
-        <div class="user-container"> </div>
-        <div class="vendor-container"> </div>
-        <div class="footer"> </div> -->
+        <div class="header"></div>
+        <div class="main-container"></div>
+        <div class="footer"></div>
 
         <!---templates begin --> 
 
         <!---template for home page view --> 
         <script type="text/template" class="home-template">
-            <div class="home-buttons">
-                <a href="#/login"><div class="login-button button">Login</div></a>
-                <a href="#/signup"><div class="signup-button button">Sign Up</div></a>
-            </div>
-        </script>
+            <div class="main-image">
+                    <img src="https://farm6.staticflickr.com/5587/14329417467_dc19a66a23_o.jpg"></img>
+                </div>
+                <a href='#/signup'><button class="signup-button button"> Sign Up </button></a>
+        </script>    
+
+        <!---template for footer view --> 
+        <script type="text/template" class="footer-template">
+            <footer>
+                <div class="social-media-links" style="color: white">
+                    <ul style="list-style: none;"> 
+                        <a href="www.facebook.com"><li>Facebook</li></a>
+                        <a href="www.twitter.com"><li>Twitter</li></a>
+                        <a href="www.linkedin.com"><li>LinkedIn</li></a>
+                        <a href="www.wordpress.com"><li>Blog</li></a>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <span> © EnterTrep, 2014 </span>
+                </div>
+            </footer>
+        </script>    
+
 
         <!-- template for Sign Up View -->
         <script type="text/template" class="sign-up-template">
-            <div class="sign-up">
-                <h1> Create an EnterTrep Account </h1>
-                <input type="text"  class="username" placeholder="Username"/>
-                <input type="password" class="password" placeholder="Password"/>
-                <input type="email" class="email" placeholder="Email"/>
-                <input type="location" class="location" placeholder="City"/>
-                <select name="state">
-                    <option value="AL">AL</option>
-                    <option value="AK">AK</option>
-                    <option value="AZ">AZ</option>
-                    <option value="AR">AR</option>
-                    <option value="CA">CA</option>
-                    <option value="CO">CO</option>
-                    <option value="CT">CT</option>
-                    <option value="DE">DE</option>
-                    <option value="DC">DC</option>
-                    <option value="FL">FL</option>
-                    <option value="GA">GA</option>
-                    <option value="HI">HI</option>
-                    <option value="ID">ID</option>
-                    <option value="IL">IL</option>
-                    <option value="IN">IN</option>
-                    <option value="IA">IA</option>
-                    <option value="KS">KS</option>
-                    <option value="KY">KY</option>
-                    <option value="LA">LA</option>
-                    <option value="ME">ME</option>
-                    <option value="MD">MD</option>
-                    <option value="MA">MA</option>
-                    <option value="MI">MI</option>
-                    <option value="MN">MN</option>
-                    <option value="MS">MS</option>
-                    <option value="MO">MO</option>
-                    <option value="MT">MT</option>
-                    <option value="NE">NE</option>
-                    <option value="NV">NV</option>
-                    <option value="NH">NH</option>
-                    <option value="NJ">NJ</option>
-                    <option value="NM">NM</option>
-                    <option value="NY">NY</option>
-                    <option value="NC">NC</option>
-                    <option value="ND">ND</option>
-                    <option value="OH">OH</option>
-                    <option value="OK">OK</option>
-                    <option value="OR">OR</option>
-                    <option value="PA">PA</option>
-                    <option value="RI">RI</option>
-                    <option value="SC">SC</option>
-                    <option value="SD">SD</option>
-                    <option value="TN">TN</option>
-                    <option value="TX">TX</option>
-                    <option value="UT">UT</option>
-                    <option value="VT">VT</option>
-                    <option value="VA">VA</option>
-                    <option value="WA">WA</option>
-                    <option value="WV">WV</option>
-                    <option value="WI">WI</option>
-                    <option value="WY">WY</option>
-                </select>
-                <select name="industry-one">
-                    <option value="Apparel">Apparel</option>
-                    <option value="E-Commerce">E-Commerce</option>
-                    <option value="Social">Social</option>
-                    <option value="Education">Education</option>
-                </select>
-                <button class="sign-up-button button">Create Account</button>
-            </div> 
+            <div class='container'>
+              <div class='signup'>
+                 <form>
+                   <input type='text' placeholder='First:'  />
+                   <input type='text' placeholder='Last:'  />
+                   <input type='text' placeholder='Email:'  />
+                   <input type='text' placeholder='Zip Code:'  />
+                   <input type='text' placeholder='Username:'  />
+                   <input type='text' placeholder='Password:'  />
+                   <button type= 'submit' class='button'> Clear </button>
+                   <button type= 'submit' class='button'> Register </button>
+                 </form>
+              </div>
+             
+              <div class='sign-info'>
+                <h1>EnterTrep</h1>
+                <p>EnterTrep is dedicated to providing new and seasoned entrepreneurs with manufacturers, material suppliers, freelance designers and developers, industry research and mentors. Create a user or business EnterTrep account and join the community.</p>
+                <div class="wrapper">
+                    <ul style="list-style: none;">
+                        <li>
+                            <p>Select Account Type:</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="check-box" /> <span2>User Profile</span2>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="check-box" /> <span2>Business Profile</span2>
+                        </li>
+                     </ul>
+                </div>
+                <div class="selectors">
+                    <span3> Select up to 2 industries that you are interested in: </span3>
+                    <select name="industry-one">
+                        <option value="Goods">Consumer Goods</option>
+                        <option value="Apparel">Apparel</option>
+                        <option value="E-Commerce">E-Commerce</option>
+                        <option value="Social">Social Innovation</option>
+                        <option value="Education">Education</option>
+                        <option value="Health">Health & Wellness</option>
+                        <option value="Food">Food & Beverage</option>
+                        <option value="Digital">Digital Experiences</option>
+                        <option value="Franchises">Franchises</option>
+                    </select>
+                    <select name="industry-two">
+                        <option value="Goods">Consumer Goods</option>
+                        <option value="Apparel">Apparel</option>
+                        <option value="E-Commerce">E-Commerce</option>
+                        <option value="Social">Social Innovation</option>
+                        <option value="Education">Education</option>
+                        <option value="Health">Health & Wellness</option>
+                        <option value="Food">Food & Beverage</option>
+                        <option value="Digital">Digital Experiences</option>
+                        <option value="Franchises">Franchises</option>
+                    </select>
+                </div>
+                <div class="categories">
+                    <p2>Connect: 
+                      <span>Manufacturers</span>
+                      <span>Suppliers</span>
+                      <span>Materials</span>
+                      <span>Packaging</span>
+                      <span>Equity</span>
+                      <span>Research</span>
+                      <span>Branding</span>
+                      <span>Advertising</span>
+                      <span>E-Commerce</span>
+                      <span>Development</span>
+                    </p2>
+                </div>
+              </div>
+            </div>
         </script> 
 
         <!-- template for User View -->
+    <script type="text/template" class="user-template">
+        <div class="topbar">
+                <input type="text" class="search left rounded" value="" />
+                <button class="go left rounded"><span>Search</span></button>
+            <div class="icons">
+                <a href="www.facebook.com"><span class="mega-octicon octicon-home"></span></a>
+                <a href="www.facebook.com"><span class="mega-octicon octicon-repo"></span></a>
+                <a href="www.facebook.com"><span class="mega-octicon octicon-mail-read"></span></a>
+                <a href="www.facebook.com"><span class="mega-octicon octicon-gear"></span></a>
+            </div>
+        </div>
 
-        <!-- template for Vendor View -->
-        
+        <div class="user-container">
+            <div class="left-container">
+                <div class="profile-photo">
+                    <img src="http://tomnora.files.wordpress.com/2013/05/5d9cef9363ba0efb81818bec42eb2ce61.jpeg"></img>
+                </div>
+                <div class="user-info">
+                    <ul style="list-style: none;">
+                        <li> 
+                            <span> Entrepreneur and CEO </span>
+                            <span> Los Angeles, CA </span>
+                            <span> www.nastygal.com </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="friends-group">
+                    <a href="www.google.com"><span>Connections (25)</span></a>
+                    <img src="http://placehold.it/300x300"></img>
+                </div>
+                <div class="business-group">
+                    <a href="www.google.com"><span>Favorite Businesses (45) </span></a>
+                    <img src="http://placehold.it/300x300"></img>
+                </div>
+            </div>
 
+            <div class="right-container">
+                <h1> Sophia Amarouso </h1>
+                <h2> Entrepreneur </h2>
+                <div class="userbar">
+                    <ul style="list-style: none;">
+                      <li><a href="www.google.com"><span>About</span></a></li>
+                      <li><a href="www.google.com"><span>Posts</span></a></li>
+                      <li><a href="www.google.com"><span>Images</span></a></li>
+                      <li><a href="www.google.com"><span>Idea Pad</span></a></li>
+                    </ul>
+                </div>
+                <div class="idea-pad">
+                    <div class="images-idea-pad">
+                        <h3> Images </h3>
+                        <img src="http://placehold.it/150x150"></img>
+                        <img src="http://placehold.it/150x150"></img>
+                        <img src="http://placehold.it/150x150"></img>
+                    </div>
+                    <div class="images-inspiration-pad">
+                        <h3> Inspiration </h3>
+                        <img src="http://placehold.it/150x150"></img>
+                        <img src="http://placehold.it/150x150"></img>
+                        <img src="http://placehold.it/150x150"></img>
+                    </div>
+                    <div class="images-note-pad">
+                        <h3> Notes </h3>
+                        <img src="http://placehold.it/150x150"></img>
+                        <img src="http://placehold.it/150x150"></img>
+                        <img src="http://placehold.it/150x150"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        
+        <div class="footer">
+            <div class="social-media-links" style="color: white">
+                <ul style="list-style: none;"> 
+                    <a href="www.facebook.com"><li>Facebook</li></a>
+                    <a href="www.twitter.com"><li>Twitter</li></a>
+                    <a href="www.linkedin.com"><li>LinkedIn</li></a>
+                    <a href="www.wordpress.com"><li>Blog</li></a>
+                </ul>
+            </div>
+            <div class="copyright">
+                <span> © EnterTrep, 2014 </span>
+            </div>
+        </div>
+    </script>
 
 
         <!-- build:js scripts/vendor.js -->

@@ -6,9 +6,6 @@ var Vendor = Parse.Object.extend ({
 	className: "Vendor"
 });
 
-
-
-
 var UserCollection = Parse.Collection.extend({
 	model: User
 });
