@@ -30,6 +30,11 @@ var AppRouter = Parse.Router.extend({
 		new LoginView();
 	},
 
+	submitUser: function() {
+		$('.main-container').html('');
+		new UserView;
+	}
+
 });
 
 var router = new AppRouter();

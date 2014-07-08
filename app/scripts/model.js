@@ -1,5 +1,5 @@
-var User = Parse.Object.extend ({
-	className: "User"
+var Post = Parse.Object.extend ({
+	className: "User", 
 });
 
 var Vendor = Parse.Object.extend ({
@@ -7,9 +7,11 @@ var Vendor = Parse.Object.extend ({
 });
 
 var UserCollection = Parse.Collection.extend({
-	model: User
+	model: Post
 });
 
 var VendorCollection = Parse.Collection.extend({
 	model: Vendor
 });
+
+var posts = new UserCollection

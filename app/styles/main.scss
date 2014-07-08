@@ -275,7 +275,7 @@ body {
 .signup-container {
     width: 840px;
     margin: 25px auto;
-    background-color: #2B547E;
+    color: #2B547E;
     font: 1em Helvetica;
 }
 
@@ -326,7 +326,7 @@ body {
   color: rgba(0,0,0,.4);
 }
 
-.sign-up-button {
+.clear-button, .register-button {
   font-family: "GeosansLight", sans-serif;
   margin-top: 27px;
   width: 30%;
@@ -385,6 +385,171 @@ span:hover {
     margin-left: 480px;
 }
 
+
+///////// user css ////////////
+
+.topbar {
+        width: 100%;
+        height: 3.125em;
+        background-color: #E5E4E2; 
+    }
+
+.topbar a {
+    color: black;
+}
+
+.topbar a:hover {
+    color: #2B547E;
+}
+
+.icons {
+    float: right;
+    margin: .688em 4% 0 0;
+    word-spacing: 1.250em;
+}
+
+.left {
+float:left;
+}
+
+.rounded {
+    border-radius:1px;
+}
+
+.search {
+    width:300px;
+    position:relative; 
+    top:7px; 
+    padding:8px 5px 8px 30px;
+    border:1px solid #ccc;
+    margin-left: 40px; 
+    background:white url(http://i.imgur.com/lFkqn.png) left center no-repeat;
+}
+.go-left-button {
+    position:relative; 
+    top:7;
+    padding:0px 5px 2px;
+    margin-left:-72px;
+    border:none;
+    background-color: #85888a;
+}
+    
+.go-left-button spansearch {
+    display:block;
+    width:61px; 
+    height:22px;
+    margin-top: 13px;
+}
+
+.left-container {
+    float:left;
+    width: 40%;
+}
+
+.right-container {
+    float: right;
+    width: 48%;
+}
+
+.profile-photo img {
+    width: 300px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 250px;
+}
+
+.user-info spaninfo {
+    display: block;
+    font-family: "GeosansLight", sans-serif;
+    margin: 10px;
+    margin-left: 210px;
+    font-size: 18px;
+}
+
+.userbar {
+    width: 550px;
+    height: 25px;
+    background-color: #E5E4E2;
+    margin-top: -15px;
+    margin-left: -140px;
+}
+
+.right-container h1 {
+    margin-top: 65px;
+    margin-left: -140px;
+    font-family: helvetica, sans-serif;
+}
+
+.right-container h2 {
+    margin-top: -20px;
+    margin-left: -140px;
+    margin-bottom: 25px;
+    font-family: helvetica, sans-serif;
+}
+
+.userbar li {
+    display: inline;
+    margin: 90px;
+    font-size: 20px;
+    font-family: "GeosansLight", sans-serif;
+    margin-left: -27px;
+}
+
+.images-idea-pad {
+    margin-top: 30px;
+    margin-left: -137px;
+    word-spacing: 20px;
+    font-family: helvetica, sans-serif;
+}
+
+.images-inspiration-pad {
+    margin-top: 50px;
+    margin-left: -137px;
+    word-spacing: 20px;
+    font-family: helvetica, sans-serif;
+}
+
+.images-note-pad {
+    margin-top: 50px;
+    margin-left: -137px;
+    word-spacing: 20px;
+    font-family: helvetica, sans-serif;
+}
+
+.friends-group {
+    margin-left: 250px;
+    margin-top: 50px;
+    font-family: helvetica, sans-serif;
+}
+
+.business-group {
+    margin-left: 250px;
+    margin-top: 50px;
+    font-family: helvetica, sans-serif;
+}
+
+.footer {
+    width: 100%;
+    height: 6.250em;
+    background-color: #595856; 
+    margin-top: 82em;
+}
+
+.social-media-links {
+    color: white;
+    float: left;
+    margin: -.188em 0 0 4%;
+}
+
+.copyright p {
+    float: right;
+    color:white;
+    margin: 4.375em 6% 0 0;
+}
+
+.footer a {
+    color: white;
+}
 
 
 

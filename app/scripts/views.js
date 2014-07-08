@@ -56,13 +56,20 @@ var SignUpView = Parse.View.extend({
 	register: function() {
 		router.navigate('#/register', {trigger: true});
 
+		var username = $(".add-user-name").val();
+		var password = $(".add-password").val();
+		var email = $(".add-email").val();
+		var firstName = $(".add-first-name").val();
+		var lastName = $(".add-last-name").val();
+		var zipCode = $(".add-zip-code").val();
+
 		var user = new Parse.User();
-			user.set("username", "my username" , $(".add-user-name"));
-			user.set("password", "my pass", $(".add-password"));
-			user.set("email", "email@example.com", $(".add-email"));
-			user.set("first name", "my first name", $(".add-first-name"));
-			user.set("last name", "my last name", $(".add-last-name"));
-			user.set("zipcode", "digits", $(".add-zip-code"));
+			user.set("username", username);
+			user.set("password", password);
+			user.set("email", email);
+			user.set("first name", firstName);
+			user.set("last name", lastName);
+			user.set("zipcode", zipCode);
 			 
 			user.signUp(null, {
 			  success: function(user) {
@@ -114,6 +121,29 @@ var LoginView = Parse.View.extend({
 
 		});
 	}
+});
+
+///////// User View ///////////
+var UserView = Parse.View.extend({
+
+	className: 'user-view',
+
+	userTemplate: _.template($(".user-template").text()),
+
+	events: {
+
+	},
+
+	initialize: function() {
+		$('.main-container').append(this.el);
+		this.render();
+	},
+
+	render: function() {
+		var renderedTemplate = this.userTemplate;
+		this.$el.html(renderedTemplate);
+		return this;
+	},
 });
 
 ///// still need user and and vendor views //////////

@@ -282,24 +282,6 @@
             </div> 
         </script>    
 
-        <!---template for footer view --> 
-        <script type="text/template" class="footer-template">
-            <footer>
-                <div class="social-media-links" style="color: white">
-                    <ul style="list-style: none;"> 
-                        <a href="www.facebook.com"><li>Facebook</li></a>
-                        <a href="www.twitter.com"><li>Twitter</li></a>
-                        <a href="www.linkedin.com"><li>LinkedIn</li></a>
-                        <a href="www.wordpress.com"><li>Blog</li></a>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <spanfooter> © EnterTrep, 2014 </spanfooter>
-                </div>
-            </footer>
-        </script>    
-
-
         <!-- template for Sign Up View -->
         <script type="text/template" class="sign-up-template">
             <div class='signup-container'>
@@ -311,8 +293,8 @@
                    <input type='text' placeholder='Zip Code:' class="add-zip-code" />
                    <input type='text' placeholder='Username:' class="add-user-name" />
                    <input type='text' placeholder='Password:' class="add-password" />
-                   <button type= 'submit' class='sign-up-button'> Clear </button>
-                   <button type= 'submit' class='sign-up-button'> Register </button>
+                   <button type= 'submit' class='clear-button'> Clear </button>
+                   <button type= 'submit' class='register-button'> Register </button>
                  </form>
               </div>
              
@@ -379,12 +361,12 @@
     <script type="text/template" class="user-template">
         <div class="topbar">
                 <input type="text" class="search left rounded" value="" />
-                <button class="go left rounded"><span>Search</span></button>
+                <button class="go-left-button"><spansearch>Search</spansearch></button>
             <div class="icons">
-                <a href="www.facebook.com"><span class="mega-octicon octicon-home"></span></a>
-                <a href="www.facebook.com"><span class="mega-octicon octicon-repo"></span></a>
-                <a href="www.facebook.com"><span class="mega-octicon octicon-mail-read"></span></a>
-                <a href="www.facebook.com"><span class="mega-octicon octicon-gear"></span></a>
+                <a href="www.facebook.com"><spanicon class="mega-octicon octicon-home"></spanicon></a>
+                <a href="www.facebook.com"><spanicon class="mega-octicon octicon-repo"></spanicon></a>
+                <a href="www.facebook.com"><spanicon class="mega-octicon octicon-mail-read"></spanicon></a>
+                <a href="www.facebook.com"><spanicon class="mega-octicon octicon-gear"></spanicon></a>
             </div>
         </div>
 
@@ -396,18 +378,18 @@
                 <div class="user-info">
                     <ul style="list-style: none;">
                         <li> 
-                            <span> Entrepreneur and CEO </span>
-                            <span> Los Angeles, CA </span>
-                            <span> www.nastygal.com </span>
+                            <spaninfo> Entrepreneur and CEO </spaninfo>
+                            <spaninfo> Los Angeles, CA </spaninfo>
+                            <spaninfo> www.nastygal.com </spaninfo>
                         </li>
                     </ul>
                 </div>
                 <div class="friends-group">
-                    <a href="www.google.com"><span>Connections (25)</span></a>
+                    <a href="www.google.com"><spangroup>Connections (25)</spangroup></a>
                     <img src="http://placehold.it/300x300"></img>
                 </div>
                 <div class="business-group">
-                    <a href="www.google.com"><span>Favorite Businesses (45) </span></a>
+                    <a href="www.google.com"><spangroup>Favorite Businesses (45) </spangroup></a>
                     <img src="http://placehold.it/300x300"></img>
                 </div>
             </div>
@@ -417,10 +399,10 @@
                 <h2> Entrepreneur </h2>
                 <div class="userbar">
                     <ul style="list-style: none;">
-                      <li><a href="www.google.com"><span>About</span></a></li>
-                      <li><a href="www.google.com"><span>Posts</span></a></li>
-                      <li><a href="www.google.com"><span>Images</span></a></li>
-                      <li><a href="www.google.com"><span>Idea Pad</span></a></li>
+                      <li><a href="www.google.com"><spanbar>About</spanbar></a></li>
+                      <li><a href="www.google.com"><spanbar>Posts</spanbar></a></li>
+                      <li><a href="www.google.com"><spanbar>Images</spanbar></a></li>
+                      <li><a href="www.google.com"><spanbar>Idea Pad</spanbar></a></li>
                     </ul>
                 </div>
                 <div class="idea-pad">
@@ -456,7 +438,7 @@
                 </ul>
             </div>
             <div class="copyright">
-                <span> © EnterTrep, 2014 </span>
+                <p> © EnterTrep, 2014 </p>
             </div>
         </div>
     </script>
