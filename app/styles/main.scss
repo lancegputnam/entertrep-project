@@ -41,7 +41,7 @@ body {
     margin: -42.188em 0 0 70%;
 }
 
-.button {
+.signup-button, .signup-button-two {
     background: #85888a;
     background-image: -webkit-linear-gradient(top, #85888a, #636363);
     background-image: -moz-linear-gradient(top, #85888a, #636363);
@@ -255,7 +255,7 @@ body {
     margin: -.188em 0 0 4%;
 }
 
-.copyright span {
+.copyright p {
     float: right;
     color:white;
     margin: 4.375em 6% 0 0;
@@ -265,7 +265,125 @@ body {
     color: white;
 }
 
+///////// Sign Up Page CSS ////////////////
 
+// body {
+//     background-color: #2B547E;
+//     font: 1em Helvetica;
+// }
+
+.signup-container {
+    width: 840px;
+    margin: 25px auto;
+    background-color: #2B547E;
+    font: 1em Helvetica;
+}
+
+.sign-info {
+    float: left;
+    background-color: white;
+    width: 480px;
+    height: 465px;
+    border-radius: 0 5px 5px 0;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.sign-info h1 {
+  font-family: "Code Bold", sans-serif;
+  color: rgba(0,0,0,.7);
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.sign-info p {
+  font-family: "GeosansLight", sans-serif;
+  color: rgba(0,0,0,.6);
+  font-size: 1.2em;
+  margin: -25px 0 20px 0;
+}
+
+.signup {
+  float: left;
+  width: 300px;
+  padding: 30px 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.signup input {
+  font-family: "GeosansLight", sans-serif;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: rgba(0,0,0,.4);
+}
+
+.sign-up-button {
+  font-family: "GeosansLight", sans-serif;
+  margin-top: 27px;
+  width: 30%;
+  border: 0;
+  background-color: #85888a;
+  border-radius: 2px;
+  height: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.signup input:focus {
+  outline: none;
+  border-color: #2B547E;
+}
+
+span {
+  font-size: .75em;
+  background-color: white;
+  padding: 2px 5px;
+  color: rgba(0,0,0,.6);
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  margin: 5px;
+}
+
+span:hover {
+  color: #2B547E;
+}
+
+.wrapper p {
+    margin-top: 23px;
+    margin-left: -38px;
+}
+
+.wrapper span2 {
+    font-family: "GeosansLight", sans-serif;
+}
+
+.selectors {
+    margin-bottom: 40px;
+}
+
+.selectors span3 {
+    display: block;
+    font-family: "GeosansLight", sans-serif;
+    margin-top: 50px;
+}
+
+.categories p2 {
+    font-family: "GeosansLight", sans-serif;
+}
+
+.account-button button {
+    margin-left: 480px;
+}
 
 
 

@@ -31,33 +31,12 @@ var HomeView = Parse.View.extend({
 	},
 });
 
-// var FooterView = Parse.View.extend({
-
-// 	className: 'footer-view',
-
-// 	footerTemplate: _.template($(".footer-template").text()),
-
-// 	events: {
-// 	},
-
-// 	initialize: function() {
-// 		$('.main-footer').html(this.el);
-// 		this.render();
-// 	},
-
-// 	render: function() {
-// 		var renderedTemplate = this.footerTemplate;
-// 		this.$el.html(renderedTemplate);
-// 		return this;
-// 	},
-// });
-
 //////// Sign Up View /////////
 var SignUpView = Parse.View.extend({
 
 	className: 'signup-view', 
 
-	signupTemplate: _.template($('.signup-template').text()),
+	signupTemplate: _.template($('.sign-up-template').text()),
 
 	events: {
 		"click .register-button" : "register",
