@@ -91,7 +91,7 @@ var LoginView = Parse.View.extend({
 	loginTemplate: _.template($('.login-template').text()),
 
 	events: {
-		"click .login-button": "login"
+		"click .submit-button": "login"
 	},
 
 	initialize: function () {
@@ -113,13 +113,14 @@ var LoginView = Parse.View.extend({
 		    $(".enter-username").val('');
 		    $(".enter-password").val('');
 
-		    router.navigate('#/');
+		    router.navigate('#/register');
 		  },
 		  error: function(user, error) {
 		    router.navigate('#/login');
 		  }
 
 		});
+		event.preventDefault();
 	}
 });
 
@@ -131,7 +132,7 @@ var UserView = Parse.View.extend({
 	userTemplate: _.template($(".user-template").text()),
 
 	events: {
-
+		// "click .go-left-button" : "search"
 	},
 
 	initialize: function() {

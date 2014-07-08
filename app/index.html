@@ -168,8 +168,8 @@
             <div class="topbar">
                 <div class="information"><spaninfo> Sign Up and Learn More </spaninfo> </div>
                 <div class="icons">
-                    <a href="www.facebook.com"><spanicon class="mega-octicon octicon-home"></spanicon></a>
-                    <a href="www.facebook.com"><spanicon class="mega-octicon octicon-repo"></spanicon></a>
+                    <a href="#"><spanicon class="mega-octicon octicon-home"></spanicon></a>
+                    <a href="#/register"><spanicon class="mega-octicon octicon-repo"></spanicon></a>
                     <a href="www.facebook.com"><spanicon class="mega-octicon octicon-mail-read"></spanicon></a>
                     <a href="www.facebook.com"><spanicon class="mega-octicon octicon-gear"></spanicon></a>
                 </div>
@@ -178,14 +178,16 @@
                     <img src="https://farm6.staticflickr.com/5587/14329417467_dc19a66a23_o.jpg"></img>
                 </div>
                 <a href='#/signup'><button class="signup-button button"> Sign Up </button></a>
+                <a href='#/login'><button class="login-button button"> Login </button></a>
+             
             <div class="container">
             <div class="first-title"><h1> EnterTrep </h1></div>
             <div class="first-paragraph">
                 <p> EnterTrep is dedicated to providing new and seasoned entrepreneurs with manufacturers, material suppliers, freelance designers and developers, industry research and mentors. Our mission is to create a community database for entrepreneurs where resources are shared amongst each other.</p>
             </div>
             <div class="profiles"><h1> In Depth Profiles </h1></div>
-                <div class="profile-photo"><img src="https://farm3.staticflickr.com/2899/14519608855_a4ab100a2c_o.jpg"></img>
-            </div>
+                <div class="indepth-photo"><img src="https://farm3.staticflickr.com/2899/14519608855_a4ab100a2c_o.jpg"></img>
+                </div>
             <div class="second-paragraph">
                 <p> EnterTrep includes free user profiles for entrepreneurs. Each profile includes connections, an about page, profile photo and links to your connections and favorite businesses. Each profile also comes with an "Idea Pad," which can be set to public or private. The Idea Pad will allow you to post images, create an inspiration board and create notes on your business.</p>
             </div>
@@ -207,7 +209,7 @@
             </div>
             <div class="middle-image">
                 <h1> Join the Community of Americas Best Entrepreneurial Resources </h1>
-                <button class="signup-button-two button"> Sign Up </button>
+                <a href='#/signup'><button class="signup-button-two button"> Sign Up </button></a>
                 <img src="https://farm3.staticflickr.com/2935/14537672102_f11060627b_o.jpg"></img>
             </div>
 
@@ -361,10 +363,10 @@
     <script type="text/template" class="user-template">
         <div class="topbar">
                 <input type="text" class="search left rounded" value="" />
-                <button class="go-left-button"><spansearch>Search</spansearch></button>
+                <button class="go-left-button button"><spansearch>Search</spansearch></button>
             <div class="icons">
-                <a href="www.facebook.com"><spanicon class="mega-octicon octicon-home"></spanicon></a>
-                <a href="www.facebook.com"><spanicon class="mega-octicon octicon-repo"></spanicon></a>
+                <a href="#"><spanicon class="mega-octicon octicon-home"></spanicon></a>
+                <a href="#/register"><spanicon class="mega-octicon octicon-repo"></spanicon></a>
                 <a href="www.facebook.com"><spanicon class="mega-octicon octicon-mail-read"></spanicon></a>
                 <a href="www.facebook.com"><spanicon class="mega-octicon octicon-gear"></spanicon></a>
             </div>
@@ -380,7 +382,7 @@
                         <li> 
                             <spaninfo> Entrepreneur and CEO </spaninfo>
                             <spaninfo> Los Angeles, CA </spaninfo>
-                            <spaninfo> www.nastygal.com </spaninfo>
+                            <spaninfo> www.mywebsite.com </spaninfo>
                         </li>
                     </ul>
                 </div>
@@ -428,7 +430,7 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="userfooter">
             <div class="social-media-links" style="color: white">
                 <ul style="list-style: none;"> 
                     <a href="www.facebook.com"><li>Facebook</li></a>
@@ -440,6 +442,17 @@
             <div class="copyright">
                 <p> © EnterTrep, 2014 </p>
             </div>
+        </div>
+    </script>
+
+    <script type="text/template" class="login-template">
+        <div id="login">
+          <h1>EnterTrep</h1>
+          <form>
+            <input class="enter-username" type="username" placeholder="Username" />
+            <input class="enter-password" type="password" placeholder="Password" />
+            <a href="#/register"><input type="submit" class="submit-button" value="Log in" /></a>
+          </form>
         </div>
     </script>
 

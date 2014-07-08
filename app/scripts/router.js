@@ -11,7 +11,7 @@ var AppRouter = Parse.Router.extend({
 	}, 
 
 	initialize: function () {
-		console.log ('welcome home')
+		console.log ('welcome home');
 	},
 
 	home: function() {
