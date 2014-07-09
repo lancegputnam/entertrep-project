@@ -147,6 +147,35 @@ var UserView = Parse.View.extend({
 	},
 });
 
+//////// Pricing View //////////
+var PricingView = Parse.View.extend({
+
+	className: 'pricing-view',
+
+	pricingTemplate: _.template($(".pricing-template").text()),
+
+	events: {
+		// "click .signup-button" : "signUp"
+	},
+
+	initialize: function() {
+		$('.main-container').append(this.el);
+		this.render();
+	},
+
+	render: function() {
+		var renderedTemplate = this.pricingTemplate;
+		this.$el.html(renderedTemplate);
+		return this;
+	},
+});
+
+
+
+
+
+
+
 ///// still need user and and vendor views //////////
 //////// what about a search view //////////
 
