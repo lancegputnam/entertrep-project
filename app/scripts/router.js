@@ -6,7 +6,7 @@ var AppRouter = Parse.Router.extend({
 		""			: "home", 
 		"signup"	: "showSignup",
 		"login"		: "showLogin",
-		"register"	: "submitUser",
+		"user"		: "submitUser",
 		"pricing"	: "showPricing",
 
 	}, 
@@ -33,7 +33,7 @@ var AppRouter = Parse.Router.extend({
 
 	submitUser: function() {
 		$('.main-container').html('');
-		new UserView;
+		new UserView(Parse.User.current().attributes);
 	},
 
 	showPricing: function() {

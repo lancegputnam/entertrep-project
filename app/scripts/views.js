@@ -1,6 +1,6 @@
  "use strict";
 
-////// Home View /////////                           
+////// MARKETING PAGE VIEW /////////                           
 var HomeView = Parse.View.extend({
 
 	className: 'home-view',
@@ -31,7 +31,7 @@ var HomeView = Parse.View.extend({
 	},
 });
 
-//////// Sign Up View /////////
+//////// SIGN UP PAGE VIEW /////////
 var SignUpView = Parse.View.extend({
 
 	className: 'signup-view', 
@@ -54,7 +54,7 @@ var SignUpView = Parse.View.extend({
 	},
 
 	register: function() {
-		router.navigate('#/register', {trigger: true});
+		router.navigate('#/user', {trigger: true});
 
 		var username = $(".add-user-name").val();
 		var password = $(".add-password").val();
@@ -62,6 +62,8 @@ var SignUpView = Parse.View.extend({
 		var firstName = $(".add-first-name").val();
 		var lastName = $(".add-last-name").val();
 		var zipCode = $(".add-zip-code").val();
+		var userProfile = $(".add-user-profile").val();
+		var businessProfile = $(".add-business-profile").val();
 
 		var user = new Parse.User();
 			user.set("username", username);
@@ -70,6 +72,8 @@ var SignUpView = Parse.View.extend({
 			user.set("first name", firstName);
 			user.set("last name", lastName);
 			user.set("zipcode", zipCode);
+			user.set("userProfile", userProfile);
+			user.set("businessProfile", businessProfile)
 			 
 			user.signUp(null, {
 			  success: function(user) {
@@ -83,7 +87,7 @@ var SignUpView = Parse.View.extend({
 	}
 });
 
-/////// Login View.... NOT IN HTML YET! ////////// 
+/////// LOGIN VIEW ////////// 
 var LoginView = Parse.View.extend({
 
 	className: 'login-view',
@@ -113,7 +117,7 @@ var LoginView = Parse.View.extend({
 		    $(".enter-username").val('');
 		    $(".enter-password").val('');
 
-		    router.navigate('#/register');
+		    router.navigate('#/user');
 		  },
 		  error: function(user, error) {
 		    router.navigate('#/login');
@@ -124,7 +128,7 @@ var LoginView = Parse.View.extend({
 	}
 });
 
-///////// User View ///////////
+///////// USER VIEW ///////////
 var UserView = Parse.View.extend({
 
 	className: 'user-view',
@@ -147,7 +151,7 @@ var UserView = Parse.View.extend({
 	},
 });
 
-//////// Pricing View //////////
+//////// PRICING VIEW //////////
 var PricingView = Parse.View.extend({
 
 	className: 'pricing-view',
@@ -169,6 +173,22 @@ var PricingView = Parse.View.extend({
 		return this;
 	},
 });
+
+/////////// UPLOAD PHOTO/MODAL VIEW ////////////
+
+
+
+// 	var fileUploadControl = $(".file-uploader button")[0];
+// 	if (fileUploadControl.files.length > 0) {
+// 	  var file = fileUploadControl.files[0];
+// 	  var name = "photo.jpg";
+
+// 	  var parseFile = new Parse.File(name, file);
+// 	}
+
+// 	var uploadPromise = parseFile.save()
+
+
 
 
 

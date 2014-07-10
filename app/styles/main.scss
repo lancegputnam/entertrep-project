@@ -1,6 +1,7 @@
 // bower:scss
 // endbower
 
+///////// MARKETING PAGE DESIGN /////////
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,10 +11,10 @@ body {
 .topbar {
     width: 100%;
     height: 3.125em;
-    background-color: #E5E4E2; 
+    background-color: #9CB8A9; 
 
     a {
-        color: black;
+        color: #453534;
     }
 
     a:hover {
@@ -26,6 +27,7 @@ body {
     margin: .250em 0 0 4%;
     font-family: "Code Bold", sans-serif; 
     font-size: 35px;
+    color: #453534;
 }
 
 .icons {
@@ -43,29 +45,31 @@ body {
 }
 
 .signup-button, .signup-button-two, .login-button {
-    background: #85888a;
-    background-image: -webkit-linear-gradient(top, #85888a, #636363);
-    background-image: -moz-linear-gradient(top, #85888a, #636363);
-    background-image: -ms-linear-gradient(top, #85888a, #636363);
-    background-image: -o-linear-gradient(top, #85888a, #636363);
-    background-image: linear-gradient(to bottom, #85888a, #636363);
-    border-radius: 4%;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 1.250em;
-    padding: .625em 2% .625em 2%;
-    text-decoration: none;
+    font-family: "GeosansLight", sans-serif;
+    margin-top: 27px;
+    width: 8%;
+    border: 0;
+    background-color: #F5E2AD;
+    border-radius: 2px;
+    height: 50px;
+    color: #453534;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 .signup-button {
-    margin: -24.75rem 0 0 40%;
+    margin: -24.75rem 0 0 76%;
     position: absolute;
+}
+
+.signup-button:hover,.signup-button-two:hover, .login-button:hover{
+  background:#FDC067;
 }
 
 .login-button {
     position: absolute;
-    margin-top: -19.8em;
-    margin-left: 750px;
+    margin-top: -24.8em;
+    margin-left: 85%;
 }
 
 .signup-button-two {
@@ -74,22 +78,62 @@ body {
 }
 
 .container {
-    margin: 4em 25% 0 25%;
+    margin: 10em 25% 0 25%;
     text-align: center;
 }
 
-.first-paragraph, .second-paragraph, .info-one-paragraph, .info-two-paragraph, .info-three-paragraph, .social-media-links, .copyright {
+
+.info-one-paragraph, .info-three-paragraph, .social-media-links, {
     font-family: "GeosansLight", sans-serif;
-    font-size: 1.063em;
+    font-size: 1.625em;
+    text-align: left;
+    color: #453534;
 }
 
-.first-title, .features-title, .info-one h1, .info-two h1, .info-three h1 {
-    font-family: "Code Bold", sans-serif;
+.first-paragraph {
+    font-family: "GeosansLight", sans-serif;
+    font-size: 1.625em;
+    color: #453534;
 }
+
+.info-one h1, .info-three h1 {
+    font-family: "Code Bold", sans-serif;
+    font-size: 3em;
+    text-align: left;
+    color: #2B547E;
+}
+
+.first-title h1 {
+    font-family: "Code Bold", sans-serif;
+    font-size: 3em;
+    color: #2B547E;
+}
+
+.second-paragraph {
+    font-family: "GeosansLight", sans-serif;
+    font-size: 1.625em;
+    color: #453534;
+}
+
+.info-two-paragraph {
+    font-family: "GeosansLight", sans-serif;
+    font-size: 1.625em;
+    text-align: right;
+    color: #453534;
+}
+
+ .info-two h1 {
+    font-family: "Code Bold", sans-serif;
+    font-size: 3em;
+    text-align: right;
+    color: #453534;
+ }
 
 .profiles h1 {
     margin-top: 3.125em;
     font-family: "Code Bold", sans-serif;
+    font-size: 3em;
+    color: #2B547E;
 }
 
 .indepth-photo img {
@@ -100,19 +144,21 @@ body {
     margin-top: 4.688em;
 
     h1 {
-        margin: 3.125em 0 0 36%;
+        margin: 3.125em 0 0 37%;
+        color: #2B547E;
     }
 }
 
 .info-one-paragraph {
     p {
-        margin-left: 36%;
+        margin-left: 37%;
         display: inline-block;
+        color: #453534;
     }
 
     img {
-        margin: -3.75em 0 0 1%;
-        width: 14%;
+        margin: -1.75em 0 0 -5%;
+        width: 20%;
         height: 12.5em;
         position: absolute;
     }
@@ -123,19 +169,21 @@ body {
 
     h1 {
         margin: 3.125em 35% 0 0;
+        color: #2B547E;
     }
 }
 
 .info-two-paragraph {
     p {
         margin-right: 35%;
+        color: #453534;
     }
 
     img {
-        width: 14%;
+        width: 20%;
         height: 12.5em;
         position: absolute;
-        margin: -5.188em 0 0 10%;
+        margin: -2.188em 0 0 -13%;
     }
 }
 
@@ -144,25 +192,27 @@ body {
 
     h1 {
         margin: 3.125em 0 0 35%;
+        color: #2B547E;
     }
 }
 
 .info-three-paragraph {
     p {
         margin-left: 35%;
+        color: #453534;
     }
 
     img {
-        width: 14%;
+        width: 20%;
         height: 12.5em;
         position: absolute;
-        margin: -4.188em 0 0 -24%;
+        margin: -2.188em 0 0 -7%;
     }
 }
 
 .middle-image {
     img {
-    margin-top: 6.250em;
+    margin-top: 10.250em;
     width: 100%;
     height: 23.750em;
     }
@@ -183,46 +233,62 @@ body {
 .vendor-profiles {
     text-align: center;
     font-family: "Code Bold", sans-serif;
-    margin: 10% 0 5% 0;
+    margin: 20% -45% 5% 0;
+    font-size: 1.563em;
+    color: #2B547E;
 }
 
 .vendor-image {
     p {
-        margin-left: 45%;
-        margin-top: 6%;
+        margin-left: 47%;
+        margin-top: -3%;
         display: inline-block;
         font-family: "GeosansLight", sans-serif;
-        font-size: 1.063em;
+        font-size: 1.625em;
+        color: #453534;
     }
 
     img {
-        width: 28%;
+        width: 30%;
         position: absolute;
-        margin: -0.188em 0 0 -3%;
+        margin: -3.188em 0 0 -3%;
     }
 }
 
 .vendor-examples {
     margin-top: 20%;
     text-align: center;
+    color: #453534;
 
     img {
         width: 75%;
+        margin-top: -4.063em;
     }
 }
 
 .features-title h1 {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 25%;
+    font-size: 3em;
+    font-family: "Code Bold", sans-serif;
+    color: #2B547E;
 }
 
 .features {
     display: inline-block;
-    margin-left: 1%;
+    margin-left: -10%;
     font-family: "GeosansLight", sans-serif;
 
     h3{
         margin-left: 0%;
+        font-size: 2em;
+        font-weight: bold;
+        color: #453534;
+    }
+
+    li {
+      font-size: 1.5em;
+      color: #453534;
     }
 }
 
@@ -230,6 +296,16 @@ body {
     display: inline-block;
     margin-left: 16%;
     font-family: "GeosansLight", sans-serif;
+
+    h3{
+        font-size: 2em;
+        color: #453534;
+    }
+
+    li {
+      font-size: 1.5em;
+      color: #453534;
+    }
 }
 
 .features-three {
@@ -237,37 +313,45 @@ body {
     position: absolute;
     margin-left: 11%;
     font-family: "GeosansLight", sans-serif;
+
+    h3{
+        font-size: 2em;
+        color: #453534;
+    }
+
+    li {
+      font-size: 1.5em;
+      color: #453534;
+    }
 }
 
 .footer {
     width: 100%;
     height: 6.250em;
-    background-color: #595856; 
-    margin-top: 5em;
+    background-color: #9CB8A9; 
+    margin-top: 14em;
 }
 
 .social-media-links {
     color: white;
     float: left;
     margin: -.188em 0 0 4%;
+    font-size: 1em;
 }
 
 .copyright p {
     float: right;
     color:white;
     margin: 4.375em 6% 0 0;
+    font-size: 1em;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .footer a {
     color: white;
 }
 
-///////// Sign Up Page CSS ////////////////
-
-// body {
-//     background-color: #2B547E;
-//     font: 1em Helvetica;
-// }
+///////// SIGN UP PAGE ////////////////
 
 .signup-container {
     width: 840px;
@@ -288,14 +372,14 @@ body {
 
 .sign-info h1 {
   font-family: "Code Bold", sans-serif;
-  color: rgba(0,0,0,.7);
+  color: #2B547E;
   font-weight: 900;
   font-size: 2.5em;
 }
 
 .sign-info p {
   font-family: "GeosansLight", sans-serif;
-  color: rgba(0,0,0,.6);
+  color: #453534;
   font-size: 1.2em;
   margin: -25px 0 20px 0;
 }
@@ -328,10 +412,10 @@ body {
   margin-top: 27px;
   width: 30%;
   border: 0;
-  background-color: #85888a;
+  background-color: #F5E2AD;
   border-radius: 2px;
   height: 50px;
-  color: white;
+  color: #453534;
   font-weight: 400;
   font-size: 1em;
 }
@@ -343,12 +427,13 @@ body {
 
 span {
   font-size: .75em;
-  background-color: white;
+  background-color: #9CB8A9;
   padding: 2px 5px;
-  color: rgba(0,0,0,.6);
+  color: #453534;
   border-radius: 2px;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
   margin: 5px;
+  line-height: 2.5;
 }
 
 span:hover {
@@ -358,10 +443,12 @@ span:hover {
 .wrapper p {
     margin-top: 23px;
     margin-left: -38px;
+    color: #453534;
 }
 
 .wrapper span2 {
     font-family: "GeosansLight", sans-serif;
+    color: #453534;
 }
 
 .selectors {
@@ -372,10 +459,12 @@ span:hover {
     display: block;
     font-family: "GeosansLight", sans-serif;
     margin-top: 50px;
+    color: #453534;
 }
 
 .categories p2 {
     font-family: "GeosansLight", sans-serif;
+    color: #453534;
 }
 
 .account-button button {
@@ -383,16 +472,16 @@ span:hover {
 }
 
 
-///////// user css ////////////
+///////// USER PAGE DESIGN ////////////
 
 .topbar {
         width: 100%;
         height: 3.125em;
-        background-color: #E5E4E2; 
+        background-color: #9CB8A9; 
     }
 
 .topbar a {
-    color: black;
+    color: #453534;
 }
 
 .topbar a:hover {
@@ -422,20 +511,23 @@ float:left;
     margin-left: 40px; 
     background:white url(http://i.imgur.com/lFkqn.png) left center no-repeat;
 }
+
 .go-left-button {
     position:relative; 
     top:7;
     padding:8px 5px 8px;
     margin-left:-72px;
     border:none;
-    background-color: #85888a;
-    margin-top: 8px;
+    background-color: #453534;
+    margin-top: 9px;
+    cursor: pointer; cursor: hand;
 }
     
 .go-left-button spansearch {
     display:block;
     width:61px; 
     height:15px;
+    color: white;
 }
 
 .left-container {
@@ -528,14 +620,8 @@ float:left;
 .userfooter {
     width: 100%;
     height: 6.250em;
-    background-color: #595856; 
+    background-color: #9CB8A9; 
     margin-top: 82em;
-}
-
-.social-media-links {
-    color: white;
-    float: left;
-    margin: -.188em 0 0 4%;
 }
 
 .copyright p {
@@ -544,12 +630,8 @@ float:left;
     margin: 4.375em 6% 0 0;
 }
 
-.footer a {
-    color: white;
-}
 
-
-///////// log in button ///////
+///////// LOGIN PAGE ///////
 
 #login{
   width:400px;
@@ -570,7 +652,7 @@ float:left;
 }
 
 #login h1{
-  background:#85888a;
+  background:#9CB8A9;
   padding:20px 0;
   text-align:center;
   color:#fff;
@@ -591,7 +673,7 @@ float:left;
 
 .submit-button[type="submit"]{
   width:100%;
-  background:#85888a;
+  background:#9CB8A9;
   border:0;
   padding:4%;
   font-family: "GeosansLight", sans-serif;
@@ -603,11 +685,11 @@ float:left;
 }
 
 .submit-button[type="submit"]:hover{
-  background:#2288bb;
+  background:#FDC067;
 }
 
 
-////// Pricing Plan ///////
+////// PRICING PLAN PAGE ///////
 .plans {
   width: 1036px;
   margin: 50px auto;
@@ -652,7 +734,7 @@ float:left;
   line-height: 1;
   font-size: 28px;
   font-weight: bold;
-  color: #990012;
+  color: #FDC067;
 }
 
 .plan-bus-price {
@@ -660,7 +742,7 @@ float:left;
   line-height: 1;
   font-size: 28px;
   font-weight: bold;
-  color: #990012;
+  color: #FDC067;
   margin-top: 0px;
 }
 
@@ -684,7 +766,7 @@ float:left;
   line-height: 20px;
   font-size: 13px;
   font-weight: 500;
-  color: #333;
+  color: #2B547E;
 
   & + & { margin-top: 5px; }
 }
@@ -710,7 +792,7 @@ float:left;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 1px rgba(black, .1);
-  background: #990012;
+  background: #FDC067;
   border-bottom: 2px solid #cf7e3b;
   border-color: rgba(black, .15);
   border-radius: 4px;
@@ -736,13 +818,13 @@ float:left;
   padding-left: 15px;
   padding-right: 15px;
   width: 250px;
-  border: 4px solid #990012;
+  border: 4px solid #FDC067;
 
   .plan-button {
     font-size: 18px;
     line-height: 49px;
-    background: #990012;
-    border-color: #990012;
+    background: #FDC067;
+    border-color: #FDC067;
     border-color: rgba(black, .15);
     margin-top: 40px;
   }
@@ -757,9 +839,68 @@ float:left;
   font-weight: bold;
   color: white;
   text-shadow: 0 1px rgba(black, .05);
-  background: #990012;
+  background: #FDC067;
   border-radius: 0 0 4px 4px;
 }
 
 
+////////// MODAL WINDOW ON USER PAGE ////////////
+.add-profile-photo {
+  margin-left: 455px;
+  text-decoration: none;
+  font-size: 12px;
+}
 
+.modal-overlay {
+  position: fixed;
+  font-family: "GeosansLight", sans-serif;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(21, 23, 38, 0.8);
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modal-overlay:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modal-overlay > div {
+  width: 475px;
+  position: relative;
+  margin: 10% auto;
+  padding: 50px 30px;
+  border-radius: 4px;
+  background: #fff;
+  border: 4px solid #2B547E;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+  background: #2B547E;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.save-button {
+  margin-left: 3px;
+  display: block;
+}

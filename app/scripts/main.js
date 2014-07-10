@@ -38,3 +38,13 @@ $('input[type="checkbox"]').on('change', function() {
 //     setInterval(slide, interval);
 // };
 
+$('.save-button').click(function(){
+	var imgVal =$('.file-upload button').val();
+
+	var myPost = posts.add({objectURL: imgVal}).last();
+
+	myPost.save();
+
+	$(".file-upload button").val("");
+})
+
