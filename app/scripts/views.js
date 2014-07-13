@@ -87,7 +87,7 @@ var SignUpView = Parse.View.extend({
 	}
 });
 
- //////// Settings PAGE VIEW /////////
+ //////// SETTINGS PAGE VIEW /////////
 var SettingsView = Parse.View.extend({
 
 	className: 'settings-view', 
@@ -118,6 +118,7 @@ var SettingsView = Parse.View.extend({
 		var lastName = $(".add-last-name").val();
 		var cityState = $(".add-city-state").val();
 		var occupation = $(".add-occupation").val();
+		var company = $(".add-company").val();
 		var website = $(".add-website").val();
 		var profilePhoto = $(".add-profile-photo").val();
 
@@ -127,6 +128,7 @@ var SettingsView = Parse.View.extend({
 			user.save("firstName", firstName);
 			user.save("lastName", lastName);
 			user.save("occupation", occupation);
+			user.save("company", company);
 			user.save("website", website);
 			user.save("profilePhoto", profilePhoto);
 
@@ -151,7 +153,8 @@ var LoginView = Parse.View.extend({
 	loginTemplate: _.template($('.login-template').text()),
 
 	events: {
-		"click .submit-button": "login"
+		"click .submit-button": "login",
+		"click .logout-button": "logout"
 	},
 
 	initialize: function () {
@@ -181,7 +184,16 @@ var LoginView = Parse.View.extend({
 
 		});
 		event.preventDefault();
-	}
+	},
+
+	logout: function() {
+		$(".logout-button").click(function(){
+		Parse.User.logout();
+		var currentUser = Parse.User.current();
+		})
+
+		router.navigate('#/')
+	},
 });
 
 ///////// USER VIEW ///////////

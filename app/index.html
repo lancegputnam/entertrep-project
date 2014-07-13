@@ -37,7 +37,7 @@
         <!---template for home page view --> 
         <script type="text/template" class="home-template">
             <div class="topbar">
-                <div class="information"><spaninfo> EnterTrep </spaninfo> </div>
+                <a href="#"><div class="information"><spaninfo> EnterTrep </spaninfo> </div></a>
                 <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
                     <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="main-image">
-                    <img src="https://farm6.staticflickr.com/5587/14329417467_dc19a66a23_o.jpg"></img>
+                    <img src="https://farm4.staticflickr.com/3849/14644164265_16fcbb8597_o.jpg"></img>
                 </div>
                 <a href='#/signup'><button class="signup-button button"> sign up </button></a>
                 <a href='#/login'><button class="login-button button"> login </button></a>
@@ -236,12 +236,12 @@
         <div class="topbar">
                 <input type="text" class="search left rounded" value="" />
                 <button class="go-left-button button"><spansearch>Search</spansearch></button>
-            <div class="icons">
+           <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
-                    <a href="#/user"><spanicon class="entypo-user"></spanicon></a>
-                    <a href="#/pricing"><spanicon class="entypo-folder"></spanicon></a>
-                    <a href="#/settings"><spanicon class="entypo-vcard"></spanicon></a>
-                    <a href="#/login"><spanicon class="entypo-retweet"></spanicon></a>
+                    <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
+                    <a href="#/pricing"><spanicon class="entypo-folder" title="pricing"></spanicon></a>
+                    <a href="#/settings"><spanicon class="entypo-vcard" title="settings"></spanicon></a>
+                    <a href="#/login"><spanicon class="entypo-retweet" title="login/logout"></spanicon></a>
             </div>
         </div>
 
@@ -265,7 +265,7 @@
                 <div class="user-info">
                     <ul style="list-style: none;">
                         <li> 
-                            <spaninfo> <%= Parse.User.current().attributes.businessProfile %> </spaninfo>
+                            <spaninfo> <%= Parse.User.current().attributes.company %> </spaninfo>
                             <spaninfo> <%= Parse.User.current().attributes.cityState %> </spaninfo>
                             <spaninfo> <%= Parse.User.current().attributes.website %> </spaninfo>
                         </li>
@@ -346,13 +346,13 @@
     <!-- template for Pricing View -->
     <script type="text/template" class="pricing-template">
         <div class="topbar">
-                <div class="information"><spaninfo> EnterTrep </spaninfo> </div>
+                <a href="#"><div class="information"><spaninfo> EnterTrep </spaninfo> </div></a>
                 <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
-                    <a href="#/user"><spanicon class="entypo-user"></spanicon></a>
-                    <a href="#/pricing"><spanicon class="entypo-folder"></spanicon></a>
-                    <a href="#/settings"><spanicon class="entypo-vcard"></spanicon></a>
-                    <a href="#/login"><spanicon class="entypo-retweet"></spanicon></a>
+                    <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
+                    <a href="#/pricing"><spanicon class="entypo-folder" title="pricing"></spanicon></a>
+                    <a href="#/settings"><spanicon class="entypo-vcard" title="settings"></spanicon></a>
+                    <a href="#/login"><spanicon class="entypo-retweet" title="login/logout"></spanicon></a>
                 </div>
         </div>
         <div class="plans">
@@ -422,13 +422,13 @@
 
     <script type="text/template" class="settings-template">
         <div class="topbar-settings">
-                <div class="information"><spaninfo> EnterTrep </spaninfo> </div>
+               <a href="#"><div class="information"><spaninfo> EnterTrep </spaninfo> </div></a>
                 <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
-                    <a href="#/user"><spanicon class="entypo-user"></spanicon></a>
-                    <a href="#/pricing"><spanicon class="entypo-folder"></spanicon></a>
-                    <a href="#/settings"><spanicon class="entypo-vcard"></spanicon></a>
-                    <a href="#/login"><spanicon class="entypo-retweet"></spanicon></a>
+                    <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
+                    <a href="#/pricing"><spanicon class="entypo-folder" title="pricing"></spanicon></a>
+                    <a href="#/settings"><spanicon class="entypo-vcard" title="settings"></spanicon></a>
+                    <a href="#/login"><spanicon class="entypo-retweet" title="login/logout"></spanicon></a>
                 </div>
         </div>
         <div class='signup-container-settings'>
@@ -439,10 +439,11 @@
                    <input type='text' placeholder='Edit Email:' class="add-email" />
                    <input type='text' placeholder='City, State' class="add-city-state" />
                    <input type='text' placeholder='Occupation' class="add-occupation" />
+                   <input type='text' placeholder='Company Name' class="add-company" />
                    <input type='text' placeholder='Website' class="add-website" />
                    <input type='text' placeholder='Enter URL' class="add-profile-photo" />
-                   <button type= 'submit' class='create-button button'> update settings </button>
                  </form>
+                  <a href="#/user"><button type= 'submit' class='create-button button'> update settings </button></a>
               </div>
         </div>
 
@@ -466,6 +467,9 @@
                     <p> © EnterTrep, 2014 </p>
                 </div>
             </div> 
+    </script> 
+
+    <script type="text/template" class="vendor-template">
     </script> 
 
 

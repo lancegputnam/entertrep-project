@@ -245,7 +245,7 @@ body {
 .vendor-profiles {
     text-align: center;
     font-family: "Code Bold", sans-serif;
-    margin: 20% -45% 5% 0;
+    margin: 20% -49% 5% 0;
     font-size: 1.563em;
     color: #2B547E;
 }
@@ -263,7 +263,7 @@ body {
     img {
         width: 30%;
         position: absolute;
-        margin: -3.188em 0 0 -3%;
+        margin: 1.812em 0 0 -3%;
     }
 }
 
@@ -288,7 +288,7 @@ body {
 
 .features {
     display: inline-block;
-    margin-left: -10%;
+    margin-left: -15%;
     font-family: "GeosansLight", sans-serif;
 
     h3{
@@ -616,6 +616,10 @@ float:left;
     font-size: 20px;
     font-family: "GeosansLight", sans-serif;
     margin-left: -27px;
+
+    :hover {
+      color: #2B547E;
+    }
 }
 
 .images-idea-pad {
@@ -645,10 +649,18 @@ float:left;
     font-family: helvetica, sans-serif;
 }
 
+.friends-group:hover {
+  color: #2B547E;
+}
+
 .business-group {
     margin-left: 250px;
     margin-top: 50px;
     font-family: helvetica, sans-serif;
+}
+
+.business-group:hover {
+  color: #2B547E;
 }
 
 .userfooter {

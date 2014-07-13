@@ -2,25 +2,12 @@
 
 Parse.initialize("wbnxBmyVZJGalQ3RY1jZ9le08eo2rm3qze8Luyvv", "qICIy4EMU4sV6aiWQ1z559RrZNTmzfPbwNHp6QVB");
 
-// $("input:checkbox").click(function() {
-//     if ($(this).is(":checked")) {
-//         var group = "input:checkbox[name='" + $(this).attr("name") + "']";
-//         $(this).prop("checked", true);
-//     } else {
-//         $(this).prop("checked", false);
-//     }
-// });
-
-// $(".wrapper input:checkbox").change(function() {
-//     $(".wrapper input:checkbox").attr("checked", false);
-//     $(this).attr("checked", true);
-// });
-
+///////// this input selector is NOT working /////////////
 $('input[type="checkbox"]').on('change', function() {
    $('input[type="checkbox"]').not(this).prop('checked', false);
 });
 
-/////// For the image slider on the home page ///////////
+///// For the image slider on the home page ///////////
 // var imgArray = [
 //    "https://farm4.staticflickr.com/3854/14559445463_cd9ac22c5a_o.jpg",
 //    "https://farm4.staticflickr.com/3881/14352877129_7f1c24de47_o.jpg", 
@@ -38,6 +25,8 @@ $('input[type="checkbox"]').on('change', function() {
 //     setInterval(slide, interval);
 // };
 
+
+//// this is supposed to be for the save photo modal box /////////
 $('.save-button').click(function(){
 	var imgVal =$('.file-upload button').val();
 
@@ -49,7 +38,4 @@ $('.save-button').click(function(){
 })
 
 
-$(".home-page-sign-out-button").click(function() {
-Parse.User.logOut();
-var currentUser = Parse.User.current();
-});
+
