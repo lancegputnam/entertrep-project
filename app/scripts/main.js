@@ -48,3 +48,8 @@ $('.save-button').click(function(){
 	$(".file-upload button").val("");
 })
 
+
+$(".home-page-sign-out-button").click(function() {
+Parse.User.logOut();
+var currentUser = Parse.User.current();
+});

@@ -58,7 +58,7 @@ body {
 }
 
 .signup-button {
-    margin: -24.75rem 0 0 76%;
+    margin: -21.75rem 0 0 76%;
     position: absolute;
 }
 
@@ -68,7 +68,7 @@ body {
 
 .login-button {
     position: absolute;
-    margin-top: -24.8em;
+    margin-top: -21.75em;
     margin-left: 85%;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .container {
-    margin: 10em 25% 0 25%;
+    margin: 10em 22% 0 22%;
     text-align: center;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 .indepth-photo img {
-    margin-left: -13%;
+    margin-left: -12%;
 }
 
 .info-one {
@@ -407,7 +407,7 @@ body {
   color: rgba(0,0,0,.4);
 }
 
-.clear-button, .register-button {
+.register-button {
   font-family: "GeosansLight", sans-serif;
   margin-top: 27px;
   width: 30%;
@@ -418,6 +418,24 @@ body {
   color: #453534;
   font-weight: 400;
   font-size: 1em;
+  margin-left: 105px;
+}
+
+.clear-button {
+  font-family: "GeosansLight", sans-serif;
+  margin-top: -50px;
+  width: 7%;
+  border: 0;
+  background-color: #F5E2AD;
+  border-radius: 2px;
+  height: 50px;
+  color: #453534;
+  font-weight: 400;
+  font-size: 1em;
+  display: block;
+  text-decoration: none;
+  margin-left: 55px;
+  position: absolute;
 }
 
 .signup input:focus {
@@ -532,12 +550,12 @@ float:left;
 
 .left-container {
     float:left;
-    width: 40%;
+    width: 47%;
 }
 
 .right-container {
     float: right;
-    width: 48%;
+    width: 44%;
 }
 
 .profile-photo img {

@@ -69,13 +69,69 @@ var SignUpView = Parse.View.extend({
 			user.set("username", username);
 			user.set("password", password);
 			user.set("email", email);
-			user.set("first name", firstName);
-			user.set("last name", lastName);
+			user.set("firstName", firstName);
+			user.set("lastName", lastName);
 			user.set("zipcode", zipCode);
 			user.set("userProfile", userProfile);
 			user.set("businessProfile", businessProfile)
 			 
 			user.signUp(null, {
+			  success: function(user) {
+			    // Hooray! Let them use the app now.
+			  },
+			  error: function(user, error) {
+			    // Show the error message somewhere and let the user try again.
+			    alert("Error: " + error.code + "Please ensure login information is correct" + error.message);
+	  		  }
+	});
+	}
+});
+
+ //////// Settings PAGE VIEW /////////
+var SettingsView = Parse.View.extend({
+
+	className: 'settings-view', 
+
+	settingsTemplate: _.template($('.settings-template').text()),
+
+	events: {
+		"click .create-button" : "addSettings",
+	},
+
+	initialize: function() {
+		$('.main-container').append(this.el);
+		this.render();
+	},
+
+	render: function () {
+		var renderedTemplate = this.settingsTemplate;
+		this.$el.html(renderedTemplate);
+		return this;
+	},
+
+	addSettings: function() {
+		router.navigate('#/settings', {trigger: true});
+
+		
+		var email = $(".add-email").val();
+		var firstName = $(".add-first-name").val();
+		var lastName = $(".add-last-name").val();
+		var cityState = $(".add-city-state").val();
+		var occupation = $(".add-occupation").val();
+		var website = $(".add-website").val();
+		var profilePhoto = $(".add-profile-photo").val();
+
+		var user = Parse.User.current();
+			
+			user.save("email", email);
+			user.save("firstName", firstName);
+			user.save("lastName", lastName);
+			user.save("occupation", occupation);
+			user.save("website", website);
+			user.save("profilePhoto", profilePhoto);
+
+			 
+			user.save(null, {
 			  success: function(user) {
 			    // Hooray! Let them use the app now.
 			  },

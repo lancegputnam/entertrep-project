@@ -41,8 +41,8 @@
                 <div class="icons">
                     <a href="#"><spanicon class="mega-octicon octicon-home"></spanicon></a>
                     <a href="#/user"><spanicon class="mega-octicon octicon-repo"></spanicon></a>
-                    <a href="www.facebook.com"><spanicon class="mega-octicon octicon-mail-read"></spanicon></a>
-                    <a href="#/pricing"><spanicon class="mega-octicon octicon-gear"></spanicon></a>
+                    <a href="#/pricing"><spanicon class="mega-octicon octicon-mail-read"></spanicon></a>
+                    <a href="#/settings"><spanicon class="mega-octicon octicon-gear"></spanicon></a>
                 </div>
             </div>
             <div class="main-image">
@@ -166,9 +166,9 @@
                    <input type='text' placeholder='Zip Code:' class="add-zip-code" />
                    <input type='text' placeholder='Username:' class="add-user-name" />
                    <input type='text' placeholder='Password:' class="add-password" />
-                   <button type= 'submit' class='clear-button'> Clear </button>
-                   <button type= 'submit' class='register-button'> Register </button>
+                   <button type= 'submit' class='register-button button'> register </button>
                  </form>
+                    <a href='#/pricing'><button class="clear-button button"> view pricing </button></a>
               </div>
              
               <div class='sign-info'>
@@ -238,18 +238,15 @@
             <div class="icons">
                 <a href="#"><spanicon class="mega-octicon octicon-home"></spanicon></a>
                 <a href="#/user"><spanicon class="mega-octicon octicon-repo"></spanicon></a>
-                <a href="www.facebook.com"><spanicon class="mega-octicon octicon-mail-read"></spanicon></a>
-                <a href="#/pricing"><spanicon class="mega-octicon octicon-gear"></spanicon></a>
+                <a href="#/pricing"><spanicon class="mega-octicon octicon-mail-read"></spanicon></a>
+                <a href="#/settings"><spanicon class="mega-octicon octicon-gear"></spanicon></a>
             </div>
         </div>
-        <h1><%= Parse.User.current().attributes.username %></h1>
-        <h1><%= Parse.User.current().attributes.email %></h1>
-        <h1><%= Parse.User.current().attributes.zipcode %></h1>
 
         <div class="user-container">
             <div class="left-container">
                 <div class="profile-photo">
-                    <img src="http://placehold.it/300x300"></img>
+                    <img <%= Parse.User.current().attributes.addURL %> </img>
                 </div>
 
 
@@ -266,9 +263,9 @@
                 <div class="user-info">
                     <ul style="list-style: none;">
                         <li> 
-                            <spaninfo> Entrepreneur and CEO </spaninfo>
-                            <spaninfo> Los Angeles, CA </spaninfo>
-                            <spaninfo> www.mywebsite.com </spaninfo>
+                            <spaninfo> <%= Parse.User.current().attributes.businessProfile %> </spaninfo>
+                            <spaninfo> <%= Parse.User.current().attributes.cityState %> </spaninfo>
+                            <spaninfo> <%= Parse.User.current().attributes.website %> </spaninfo>
                         </li>
                     </ul>
                 </div>
@@ -283,8 +280,8 @@
             </div>
 
             <div class="right-container">
-                <h1> FirstName LastName </h1>
-                <h2> Entrepreneur </h2>
+                <h1> <%= Parse.User.current().attributes.firstName %> <%= Parse.User.current().attributes.lastName %></h1>
+                <h2> <%= Parse.User.current().attributes.occupation %> </h2>
                 <div class="userbar">
                     <ul style="list-style: none;">
                       <li><a href="www.google.com"><spanbar>About</spanbar></a></li>
@@ -403,7 +400,8 @@
               <a href="#/signup" class="plan-button">Sign Up</a>
             </div>
         </div>
-         <div class="footer">
+
+        <div class="footer">
                 <div class="social-media-links" style="color: white">
                     <ul style="list-style: none;"> 
                         <a href="www.facebook.com"><li>Facebook</li></a>
@@ -417,6 +415,23 @@
                 </div>
             </div> 
     </script>
+
+    <script type="text/template" class="settings-template">
+        <div class='signup-container'>
+              <div class='signup'>
+                 <form>
+                   <input type='text' placeholder='Edit First Name:' class="add-first-name" />
+                   <input type='text' placeholder='Edit Last Name:' class="add-last-name" />
+                   <input type='text' placeholder='Edit Email:' class="add-email" />
+                   <input type='text' placeholder='City, State' class="add-city-state" />
+                   <input type='text' placeholder='Occupation' class="add-occupation" />
+                   <input type='text' placeholder='Website' class="add-website" />
+                   <input type='text' placeholder='Enter URL' class="add-profile-photo" />
+                   <button type= 'submit' class='create-button'> Create </button>
+                 </form>
+              </div>
+        </div>
+    </script> 
 
 
         <!-- build:js scripts/vendor.js -->
