@@ -438,6 +438,10 @@ body {
   position: absolute;
 }
 
+button:hover{
+  background:#FDC067;
+}
+
 .signup input:focus {
   outline: none;
   border-color: #2B547E;
@@ -922,3 +926,94 @@ float:left;
   margin-left: 3px;
   display: block;
 }
+
+///// SETTINGS PAGE DESIGN /////////
+.topbar-settings {
+    width: 100%;
+    height: 3.125em;
+    background-color: #9CB8A9; 
+    margin-bottom: 100px;
+
+    a {
+        color: #453534;
+    }
+
+    a:hover {
+        color: #2B547E;
+    }
+}
+.create-button {
+    font-family: "GeosansLight", sans-serif;
+    margin-top: 27px;
+    width: 37%;
+    border: 0;
+    background-color: #F5E2AD;
+    border-radius: 2px;
+    height: 50px;
+    color: #453534;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.footer-settings {
+    width: 100%;
+    height: 6.250em;
+    background-color: #9CB8A9; 
+    margin-top: 10em;
+    position: absolute;
+}
+
+.social-media-links-settings {
+    font-family: "GeosansLight", sans-serif;
+    color: white;
+    float: left;
+    margin: -.188em 0 0 4%;
+    font-size: 1em;
+}
+
+.copyright-settings p {
+    float: right;
+    color:white;
+    margin: 4.375em 6% 0 0;
+    font-size: 1em;
+    font-family: "GeosansLight", sans-serif;
+}
+
+.footer-settings a {
+    color: white;
+}
+
+.profiles-settings {
+
+    h1 {
+      margin-top: .125em;
+      font-family: "Code Bold", sans-serif;
+      font-size: 3em;
+      color: #2B547E;
+      position: absolute;
+      margin-left: 655px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      font-family: "GeosansLight", sans-serif;
+      color: #2B547E;
+      font-size: 1.5em;
+      margin-left: 635em;
+      position: absolute;
+    }
+}
+
+.indepth-photo-settings img {
+    margin-left: 1.5%;
+    height: 450px;
+    margin-top: 125px;
+}
+
+.signup-container-settings {
+    width: 915px;
+    margin: 25px auto;
+    color: #2B547E;
+    font: 1em Helvetica;
+}
+
