@@ -2,6 +2,17 @@
 // endbower
 
 ///////// MARKETING PAGE DESIGN /////////
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+*{
+-webkit-font-smoothing:antialiased;
+color:inherit;
+text-decoration:none;}
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,8 +43,9 @@ body {
 
 .icons {
     float: right;
-    margin: .688em 4% 0 0;
+    margin: .488em 4% 0 0;
     word-spacing: 1.250em;
+    font-size: 25px;
 }
 
 .main-image img {
@@ -512,7 +524,7 @@ span:hover {
 
 .icons {
     float: right;
-    margin: .688em 4% 0 0;
+    margin: .488em 4% 0 0;
     word-spacing: 1.250em;
 }
 
@@ -693,20 +705,20 @@ float:left;
   color:#555;
 }
 
-.submit-button[type="submit"]{
+.submit-button[type="submit"], .logout-button[type="submit"]{
   width:100%;
   background:#9CB8A9;
   border:0;
   padding:4%;
   font-family: "GeosansLight", sans-serif;
-  font-size:100%;
-  color:#fff;
+  font-size:24px;
+  color:#453534;
   cursor:pointer;
   transition:background .3s;
   -webkit-transition:background .3s;
 }
 
-.submit-button[type="submit"]:hover{
+.submit-button[type="submit"]:hover, .logout-button[type="submit"]:hover{
   background:#FDC067;
 }
 
@@ -999,7 +1011,7 @@ float:left;
       font-family: "GeosansLight", sans-serif;
       color: #2B547E;
       font-size: 1.5em;
-      margin-left: 635em;
+      margin-left: 26.5em;
       position: absolute;
     }
 }
