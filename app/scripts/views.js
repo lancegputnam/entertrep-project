@@ -120,7 +120,7 @@ var SettingsView = Parse.View.extend({
 		var occupation = $(".add-occupation").val();
 		var company = $(".add-company").val();
 		var website = $(".add-website").val();
-		var profilePhoto = $(".add-profile-photo").val();
+		var objectURL = $(".add-profile-photo").val();
 
 		var user = Parse.User.current();
 			
@@ -130,7 +130,7 @@ var SettingsView = Parse.View.extend({
 			user.save("occupation", occupation);
 			user.save("company", company);
 			user.save("website", website);
-			user.save("profilePhoto", profilePhoto);
+			user.save("objectURL", objectURL);
 
 			 
 			user.save(null, {
@@ -153,8 +153,8 @@ var LoginView = Parse.View.extend({
 	loginTemplate: _.template($('.login-template').text()),
 
 	events: {
-		"click .submit-button": "login",
-		"click .logout-button": "logout"
+		"click .submit-button"		 : "login",
+		"click .signup-login-button" : "signUp"
 	},
 
 	initialize: function () {
@@ -186,13 +186,18 @@ var LoginView = Parse.View.extend({
 		event.preventDefault();
 	},
 
+	signUp: function() {
+		router.navigate('#/signup', {trigger:true});
+	},
+
 	logout: function() {
+		console.log('logging out')
 		$(".logout-button").click(function(){
 		Parse.User.logout();
 		var currentUser = Parse.User.current();
-		})
+		});
 
-		router.navigate('#/')
+		router.navigate('#/');
 	},
 });
 
@@ -219,6 +224,27 @@ var UserView = Parse.View.extend({
 	},
 });
 
+///////// VENDOR VIEW ///////////
+// 	className: 'vendor-view',
+
+// 	vendorTemplate: _.template($(".vendor-template").text()),
+
+// 	events: {
+// 		// "click .go-left-button" : "search"
+// 	},
+
+// 	initialize: function() {
+// 		$('.main-container').append(this.el);
+// 		this.render();
+// 	},
+
+// 	render: function() {
+// 		var renderedTemplate = this.vendorTemplate;
+// 		this.$el.html(renderedTemplate);
+// 		return this;
+// 	},
+// });
+
 //////// PRICING VIEW //////////
 var PricingView = Parse.View.extend({
 
@@ -242,6 +268,9 @@ var PricingView = Parse.View.extend({
 	},
 });
 
+
+
+
 /////////// UPLOAD PHOTO/MODAL VIEW ////////////
 
 
@@ -257,13 +286,4 @@ var PricingView = Parse.View.extend({
 // 	var uploadPromise = parseFile.save()
 
 
-
-
-
-
-
-
-
-///// still need user and and vendor views //////////
-//////// what about a search view //////////
 

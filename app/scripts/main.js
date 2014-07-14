@@ -2,11 +2,6 @@
 
 Parse.initialize("wbnxBmyVZJGalQ3RY1jZ9le08eo2rm3qze8Luyvv", "qICIy4EMU4sV6aiWQ1z559RrZNTmzfPbwNHp6QVB");
 
-///////// this input selector is NOT working /////////////
-$('input[type="checkbox"]').on('change', function() {
-   $('input[type="checkbox"]').not(this).prop('checked', false);
-});
-
 ///// For the image slider on the home page ///////////
 // var imgArray = [
 //    "https://farm4.staticflickr.com/3854/14559445463_cd9ac22c5a_o.jpg",
@@ -26,16 +21,6 @@ $('input[type="checkbox"]').on('change', function() {
 // };
 
 
-//// this is supposed to be for the save photo modal box /////////
-$('.save-button').click(function(){
-	var imgVal =$('.file-upload button').val();
-
-	var myPost = posts.add({objectURL: imgVal}).last();
-
-	myPost.save();
-
-	$(".file-upload button").val("");
-})
 
 
 

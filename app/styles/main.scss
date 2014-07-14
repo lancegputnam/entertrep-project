@@ -17,12 +17,18 @@ body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
 }
 
 .topbar {
     width: 100%;
     height: 3.125em;
     background-color: #9CB8A9; 
+    top: 0; 
+    right: 0;
+    // position: fixed;
 
     a {
         color: #453534;
@@ -322,9 +328,9 @@ body {
 
 .features-three {
     display: inline-block;
-    position: absolute;
-    margin-left: 11%;
+    margin-left: 10%;
     font-family: "GeosansLight", sans-serif;
+    position: absolute;
 
     h3{
         font-size: 2em;
@@ -364,6 +370,13 @@ body {
 }
 
 ///////// SIGN UP PAGE ////////////////
+.whole-page {
+  background-color: #BEDCC4;
+  width: 100%;
+  height: 900px;
+  top: 0;
+  position: fixed;
+}
 
 .signup-container {
     width: 840px;
@@ -402,7 +415,6 @@ body {
   padding: 30px 20px;
   background-color: white;
   text-align: center;
-  border-radius: 5px 0 0 5px;
 }
 
 .signup input {
@@ -416,6 +428,7 @@ body {
   line-height: 45px;  
   margin-bottom: 10px;
   font-size: 1em;
+  font-weight: bold;
   color: rgba(0,0,0,.4);
 }
 
@@ -542,7 +555,7 @@ float:left;
     top:7px; 
     padding:8px 5px 8px 30px;
     border:1px solid #ccc;
-    margin-left: 40px; 
+    margin-left: 42px; 
     background:white url(http://i.imgur.com/lFkqn.png) left center no-repeat;
 }
 
@@ -717,7 +730,7 @@ float:left;
   color:#555;
 }
 
-.submit-button[type="submit"], .logout-button[type="submit"]{
+.submit-button[type="submit"], .signup-login-button[type="submit"]{
   width:100%;
   background:#9CB8A9;
   border:0;
@@ -730,7 +743,7 @@ float:left;
   -webkit-transition:background .3s;
 }
 
-.submit-button[type="submit"]:hover, .logout-button[type="submit"]:hover{
+.submit-button[type="submit"]:hover, .signup-login-button[type="submit"]:hover{
   background:#FDC067;
 }
 
@@ -1040,4 +1053,5 @@ float:left;
     color: #2B547E;
     font: 1em Helvetica;
 }
+
 

@@ -8,7 +8,8 @@ var AppRouter = Parse.Router.extend({
 		"login"		: "showLogin",
 		"user"		: "submitUser",
 		"pricing"	: "showPricing",
-		"settings"	: "showSettings"
+		"settings"	: "showSettings",
+		"vendor"	: "showVendor"
 
 	}, 
 
