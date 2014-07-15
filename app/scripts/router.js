@@ -3,13 +3,14 @@
 var AppRouter = Parse.Router.extend({
 
 	routes: {
-		""			: "home", 
-		"signup"	: "showSignup",
-		"login"		: "showLogin",
-		"user"		: "submitUser",
-		"pricing"	: "showPricing",
-		"settings"	: "showSettings",
-		"vendor"	: "showVendor"
+		""				: "home", 
+		"signup"		: "showSignup",
+		"login"			: "showLogin",
+		"user"			: "submitUser",
+		"pricing"		: "showPricing",
+		"settings"		: "showSettings",
+		"vendor"		: "showVendor", 
+		"signup-vendor"	: "showSignupForVendor"
 
 	}, 
 
@@ -47,6 +48,11 @@ var AppRouter = Parse.Router.extend({
 		$('.main-container').html('');
 		new SettingsView(Parse.User.current().attributes);
 	},
+
+	showSignupForVendor: function() {
+		$('.main-container').html('');
+		new VendorSignUpView();
+	}
 
 });
 

@@ -87,6 +87,62 @@ var SignUpView = Parse.View.extend({
 	}
 });
 
+ //////// Vendor SIGN UP PAGE VIEW /////////
+var VendorSignUpView = Parse.View.extend({
+
+	className: 'vendor-signup-view', 
+
+	vendorSignupTemplate: _.template($('.vendor-sign-up-template').text()),
+
+	events: {
+		"click .register-button" : "register",
+	},
+
+	initialize: function() {
+		$('.main-container').append(this.el);
+		this.render();
+	},
+
+	render: function () {
+		var renderedTemplate = this.vendorSignupTemplate;
+		this.$el.html(renderedTemplate);
+		return this;
+	},
+
+	register: function() {
+		router.navigate('#/user', {trigger: true});
+
+		var username = $(".add-user-name").val();
+		var password = $(".add-password").val();
+		var email = $(".add-email").val();
+		var firstName = $(".add-first-name").val();
+		var lastName = $(".add-last-name").val();
+		var zipCode = $(".add-zip-code").val();
+		var userProfile = $(".add-user-profile").val();
+		var businessProfile = $(".add-business-profile").val();
+
+		var user = new Parse.User();
+			user.set("username", username);
+			user.set("password", password);
+			user.set("email", email);
+			user.set("firstName", firstName);
+			user.set("lastName", lastName);
+			user.set("zipcode", zipCode);
+			user.set("userProfile", userProfile);
+			user.set("businessProfile", businessProfile)
+			 
+			user.signUp(null, {
+			  success: function(user) {
+			    // Hooray! Let them use the app now.
+			  },
+			  error: function(user, error) {
+			    // Show the error message somewhere and let the user try again.
+			    alert("Error: " + error.code + "Please ensure login information is correct" + error.message);
+	  		  }
+	});
+	}
+});
+
  //////// SETTINGS PAGE VIEW /////////
 var SettingsView = Parse.View.extend({
 
@@ -96,6 +152,7 @@ var SettingsView = Parse.View.extend({
 
 	events: {
 		"click .create-button" : "addSettings",
+		"click .upload-button" : "uploadPhoto",
 	},
 
 	initialize: function() {
@@ -142,6 +199,30 @@ var SettingsView = Parse.View.extend({
 			    alert("Error: " + error.code + "Please ensure login information is correct" + error.message);
 	  		  }
 	});
+	},
+
+		uploadPhoto: function() {
+
+		var fileUploadControl = $(".file-uploader")[0];
+		if (fileUploadControl.files.length > 0) {
+
+		  var file = fileUploadControl.files[0];
+		  var name = "photo.jpg";
+
+	  	var parseFile = new Parse.File(name, file);
+		}
+
+		parseFile.save().then(function(){
+			var uploadedPhoto = new Parse.Object('User');
+			uploadedPhoto.set('ProfilePicture', parseFile);
+			uploadedPhoto.save().done(function() {
+			console.log('The uploaded file has been saved to Parse.');
+		});
+
+		}, function(error) {
+  			console.log('The file either could not be read, or could not be saved to Parse.');
+		});
+	
 	}
 });
 

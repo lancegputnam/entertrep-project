@@ -161,6 +161,12 @@
         <!-- template for Sign Up View -->
         <script type="text/template" class="sign-up-template">
         <div class="whole-page">
+
+        <div class="signup-buttons">
+            <a href='#/signup'><button class="user-selector-button"> Trep Account </button></a>
+            <a href='#/signup-vendor'><button class="vendor-selector-button"> Business Account </button></a>
+        </div>
+
             <div class='signup-container'>
               <div class='signup'>
                  <form>
@@ -176,7 +182,7 @@
               </div>
              
               <div class='sign-info'>
-                <h1>EnterTrep</h1>
+                <h1>Trep Account</h1>
                 <p>EnterTrep is dedicated to providing new and seasoned entrepreneurs with manufacturers, material suppliers, freelance designers and developers, industry research and mentors. Create a user or business EnterTrep account and join the community.</p>
                 <div class="wrapper">
                     <ul style="list-style: none;">
@@ -184,10 +190,10 @@
                             <p>Select Account Type:</p>
                         </li>
                         <li>
-                            <input type="radio" name="check-box" class="add-user-profile"/> <span2>User Profile</span2>
+                            <input type="radio" name="check-box" class="add-user-profile"/> <span2>Entrepreneur</span2>
                         </li>
                         <li>
-                            <input type="radio" name="check-box" class="add-business-profile"/> <span2>Business Profile</span2>
+                            <input type="radio" name="check-box" class="add-business-profile"/> <span2>Entrepreneur Plus</span2>
                         </li>
                      </ul>
                 </div>
@@ -216,24 +222,55 @@
                         <option value="Franchises">Franchises</option>
                     </select>
                 </div>
-                <div class="categories">
-                    <p2>Connect: 
-                      <span>Manufacturers</span>
-                      <span>Suppliers</span>
-                      <span>Materials</span>
-                      <span>Packaging</span>
-                      <span>Equity</span>
-                      <span>Research</span>
-                      <span>Branding</span>
-                      <span>Advertising</span>
-                      <span>E-Commerce</span>
-                      <span>Development</span>
-                    </p2>
-                </div>
+                
               </div>
             </div>
         </div>
         </script> 
+
+    <!-- template for Vendor Sign Up View -->
+    <script type="text/template" class="vendor-sign-up-template">
+     <div class="whole-page">
+
+        <div class="signup-buttons">
+            <a href='#/signup'><button class="user-selector-button"> Trep Account </button></a>
+            <a href='#/signup-vendor'><button class="vendor-selector-button"> Business Account </button></a>
+        </div>
+
+            <div class='signup-container'>
+              <div class='signup'>
+                 <form>
+                   <input type='text' placeholder='First:' class="add-first-name" />
+                   <input type='text' placeholder='Last:' class="add-last-name" />
+                   <input type='text' placeholder='Email:' class="add-email" />
+                   <input type='text' placeholder='Zip Code:' class="add-zip-code" />
+                   <input type='text' placeholder='Username:' class="add-user-name" />
+                   <input type='text' placeholder='Password:' class="add-password" />
+                   <button type= 'submit' class='register-button button'> register </button>
+                 </form>
+                    <a href='#/pricing'><button class="clear-button button"> view pricing </button></a>
+              </div>
+             
+              <div class='sign-info'>
+                <h1>Business Account</h1>
+                <p>EnterTrep is dedicated to providing new and seasoned entrepreneurs with manufacturers, material suppliers, freelance designers and developers, industry research and mentors. Create a user or business EnterTrep account and join the community.</p>
+                <div class="wrapper">
+                    <ul style="list-style: none;">
+                        <li>
+                            <p>Select Account Type:</p>
+                        </li>
+                        <li>
+                            <input type="radio" name="check-box" class="add-user-profile"/> <span2>Starter</span2>
+                        </li>
+                        <li>
+                            <input type="radio" name="check-box" class="add-business-profile"/> <span2>Professional</span2>
+                        </li>
+                     </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </script>
 
     <!-- template for User View -->
     <script type="text/template" class="user-template">
@@ -424,6 +461,7 @@
                     <a href="#/login"><spanicon class="entypo-retweet" title="login/logout"></spanicon></a>
                 </div>
         </div>
+
         <div class='signup-container-settings'>
               <div class='signup'>
                  <form>
@@ -440,7 +478,7 @@
               </div>
         </div>
 
-        <input type="file" placeholder="select file"/>
+        <input type="file" class="file-uploader" placeholder="select file"/>
         <button type= 'submit' class='upload-button button'> upload </button>
 
         <div class="profiles-settings">
