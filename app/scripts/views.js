@@ -73,7 +73,7 @@ var SignUpView = Parse.View.extend({
 			user.set("lastName", lastName);
 			user.set("zipcode", zipCode);
 			user.set("userProfile", userProfile);
-			user.set("businessProfile", businessProfile)
+			user.set("businessProfile", businessProfile);
 			 
 			user.signUp(null, {
 			  success: function(user) {
@@ -177,7 +177,7 @@ var SettingsView = Parse.View.extend({
 		var occupation = $(".add-occupation").val();
 		var company = $(".add-company").val();
 		var website = $(".add-website").val();
-		var objectURL = $(".add-profile-photo").val();
+		var aboutMe = $(".add-about-section").val();
 
 		var user = Parse.User.current();
 			
@@ -187,7 +187,7 @@ var SettingsView = Parse.View.extend({
 			user.save("occupation", occupation);
 			user.save("company", company);
 			user.save("website", website);
-			user.save("objectURL", objectURL);
+			user.save("aboutMe", aboutMe);
 
 			 
 			user.save(null, {
@@ -213,9 +213,9 @@ var SettingsView = Parse.View.extend({
 		}
 
 		parseFile.save().then(function(){
-			var uploadedPhoto = new Parse.Object('User');
-			uploadedPhoto.set('ProfilePicture', parseFile);
-			uploadedPhoto.save().done(function() {
+			var user = new Parse.User.current();
+			user.set('ProfilePicture', parseFile);
+			user.save().done(function() {
 			console.log('The uploaded file has been saved to Parse.');
 		});
 
@@ -272,7 +272,7 @@ var LoginView = Parse.View.extend({
 	},
 
 	logout: function() {
-		console.log('logging out')
+		console.log('logging out');
 		$(".logout-button").click(function(){
 		Parse.User.logout();
 		var currentUser = Parse.User.current();
@@ -305,26 +305,51 @@ var UserView = Parse.View.extend({
 	},
 });
 
+///////// USER VIEW ///////////
+var UserAboutView = Parse.View.extend({
+
+	className: 'user-about-view',
+
+	userAboutTemplate: _.template($(".user-about-template").text()),
+
+	events: {
+		// "click .go-left-button" : "search"
+	},
+
+	initialize: function() {
+		$('.main-container').append(this.el);
+		this.render();
+	},
+
+	render: function() {
+		var renderedTemplate = this.userAboutTemplate;
+		this.$el.html(renderedTemplate);
+		return this;
+	},
+});
+
 ///////// VENDOR VIEW ///////////
-// 	className: 'vendor-view',
+var VendorView = Parse.View.extend({
 
-// 	vendorTemplate: _.template($(".vendor-template").text()),
+	className: 'vendor-view',
 
-// 	events: {
-// 		// "click .go-left-button" : "search"
-// 	},
+	vendorTemplate: _.template($(".vendor-template").text()),
 
-// 	initialize: function() {
-// 		$('.main-container').append(this.el);
-// 		this.render();
-// 	},
+	events: {
+		// "click .go-left-button" : "search"
+	},
 
-// 	render: function() {
-// 		var renderedTemplate = this.vendorTemplate;
-// 		this.$el.html(renderedTemplate);
-// 		return this;
-// 	},
-// });
+	initialize: function() {
+		$('.main-container').append(this.el);
+		this.render();
+	},
+
+	render: function() {
+		var renderedTemplate = this.vendorTemplate;
+		this.$el.html(renderedTemplate);
+		return this;
+	},
+});
 
 //////// PRICING VIEW //////////
 var PricingView = Parse.View.extend({
@@ -348,23 +373,6 @@ var PricingView = Parse.View.extend({
 		return this;
 	},
 });
-
-
-
-
-/////////// UPLOAD PHOTO/MODAL VIEW ////////////
-
-
-
-// 	var fileUploadControl = $(".file-uploader button")[0];
-// 	if (fileUploadControl.files.length > 0) {
-// 	  var file = fileUploadControl.files[0];
-// 	  var name = "photo.jpg";
-
-// 	  var parseFile = new Parse.File(name, file);
-// 	}
-
-// 	var uploadPromise = parseFile.save()
 
 
 

@@ -427,7 +427,7 @@ body {
     width: 480px;
     height: 465px;
     border-radius: 0 5px 5px 0;
-    padding-top: 20px;
+    padding-top: 19px;
     padding-right: 20px;
 }
 
@@ -678,6 +678,11 @@ float:left;
     font-family: helvetica, sans-serif;
 }
 
+.images-idea-pad img {
+  width: 150px;
+  height: 150px;
+}
+
 .images-inspiration-pad {
     margin-top: 50px;
     margin-left: -137px;
@@ -723,6 +728,13 @@ float:left;
     float: right;
     color:white;
     margin: 4.375em 6% 0 0;
+}
+
+/////// ABOUT USER PAGE ///////
+.about-me-section {
+  margin-left: -137px;
+  width: 550px;
+  margin-top: 50px;
 }
 
 
@@ -1034,7 +1046,7 @@ float:left;
     width: 100%;
     height: 6.250em;
     background-color: #9CB8A9; 
-    margin-top: 10em;
+    margin-top: 25em;
     position: absolute;
 }
 
@@ -1092,4 +1104,37 @@ float:left;
     font: 1em Helvetica;
 }
 
+textarea {
+    margin-left: 7px;
+    margin-top: 55px;
+}
 
+.add-photo-section {
+  position: absolute;
+  margin-left: 345px;
+  margin-top: 387px;
+}
+
+.add-photo-section h2 {
+      font-family: "GeosansLight", sans-serif;
+      color: #2B547E;
+}
+
+//////////// VENDOR PROFILE ///////////
+.vendor-profile-image img {
+  margin-left: 200px;
+}
+
+.footer-vendor {
+    width: 100%;
+    height: 6.250em;
+    background-color: #9CB8A9; 
+    margin-top: 90em;
+    position: absolute;
+}
+
+.about-vendor {
+    margin-left: -139px;
+    margin-top: 20px;
+    width: 550px;
+}

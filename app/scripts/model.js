@@ -14,4 +14,4 @@ var VendorCollection = Parse.Collection.extend({
 	model: Vendor
 });
 
-var posts = new UserCollection
+var posts = new UserCollection;

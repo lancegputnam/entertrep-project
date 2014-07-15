@@ -7,6 +7,7 @@ var AppRouter = Parse.Router.extend({
 		"signup"		: "showSignup",
 		"login"			: "showLogin",
 		"user"			: "submitUser",
+		"user-about"	: "showAboutPage",
 		"pricing"		: "showPricing",
 		"settings"		: "showSettings",
 		"vendor"		: "showVendor", 
@@ -39,6 +40,16 @@ var AppRouter = Parse.Router.extend({
 		new UserView(Parse.User.current().attributes);
 	},
 
+	showVendor: function() {
+		$('.main-container').html('');
+		new VendorView();
+	},
+
+	showAboutPage: function() {
+		$('.main-container').html('');
+		new UserAboutView();
+	},
+
 	showPricing: function() {
 		$('.main-container').html('');
 		new PricingView;
@@ -52,7 +63,7 @@ var AppRouter = Parse.Router.extend({
 	showSignupForVendor: function() {
 		$('.main-container').html('');
 		new VendorSignUpView();
-	}
+	}, 
 
 });
 
