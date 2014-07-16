@@ -39,6 +39,70 @@ body {
     }
 }
 
+div.menu_wrap > input[type=checkbox]{
+  display: none;
+}
+
+div.menu_wrap > label{
+  display: inline-block;
+  font-size: 1.2em;
+  padding-top: 9px;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+div.menu_wrap > ul.menu_items{
+  display: none;
+}
+
+div.menu_wrap > input[type=checkbox]:checked + ul.menu_items{
+  display: block;
+  position: absolute;
+  margin-left: 25px;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+div.menu_wrap > ul{
+  width: auto;
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+}
+
+div.menu_wrap > ul > li{
+font-size: .7em;
+}
+
+div.menu_wrap > ul > li:hover{
+  color: #453534;
+  cursor: pointer;
+}
+
+div.menu_wrap{ 
+  float: left;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 4px;
+  margin-top: -47px;
+}
+
+div.menu_wrap:last-child{
+float: right;}
+
+div.menu_wrap{
+clear: right;
+}
+
+div#wrap{
+  width: 400px;
+  margin: 0px auto;
+  background-color: #cdcdcd;
+  height: 200px;
+  padding: 20px;
+}
+
 .information {
     float: left;
     margin: .250em 0 0 4%;
@@ -690,6 +754,11 @@ float:left;
     font-family: helvetica, sans-serif;
 }
 
+.images-inspiration-pad img {
+  width: 150px;
+  height: 150px;
+}
+
 .images-note-pad {
     margin-top: 50px;
     margin-left: -137px;
@@ -1193,3 +1262,11 @@ textarea {
     width: 150px;
     height: 150px;
 }
+
+
+
+
+
+
+
+

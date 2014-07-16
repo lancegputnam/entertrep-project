@@ -8,7 +8,8 @@ var HomeView = Parse.View.extend({
 	homeTemplate: _.template($(".home-template").text()),
 
 	events: {
-		"click .signup-button" : "signUp"
+		"click .signup-button" 		 : "signUp",
+		"click .logout-button"		 : "logout",
 	},
 
 	initialize: function() {
@@ -28,6 +29,12 @@ var HomeView = Parse.View.extend({
 
 	login: function() {
 		router.navigate('#/login', {trigger: true});
+	},
+
+	logout: function() {
+	console.log('logging out');
+	Parse.User.logOut();
+	router.navigate('#/');
 	},
 });
 
@@ -239,7 +246,7 @@ var LoginView = Parse.View.extend({
 	events: {
 		"click .submit-button"		 : "login",
 		"click .signup-login-button" : "signUp",
-		"click .logout-button"		 : "logout",	
+		"click .logout-button"		 : "logout",
 	},
 
 	initialize: function () {
@@ -280,6 +287,7 @@ var LoginView = Parse.View.extend({
 		Parse.User.logOut();
 		router.navigate('#/');
 	},
+
 });
 
 ///////// USER VIEW ///////////
@@ -290,7 +298,7 @@ var UserView = Parse.View.extend({
 	userTemplate: _.template($(".user-template").text()),
 
 	events: {
-		// "click .go-left-button" : "search"
+		"click .logout-button"		 : "logout",
 	},
 
 	initialize: function() {
@@ -303,6 +311,13 @@ var UserView = Parse.View.extend({
 		this.$el.html(renderedTemplate);
 		return this;
 	},
+
+	logout: function() {
+	console.log('logging out');
+	Parse.User.logOut();
+	router.navigate('#/');
+	},
+
 });
 
 ///////// USER VIEW ///////////
@@ -313,7 +328,7 @@ var UserAboutView = Parse.View.extend({
 	userAboutTemplate: _.template($(".user-about-template").text()),
 
 	events: {
-		// "click .go-left-button" : "search"
+		"click .logout-button"		 : "logout",
 	},
 
 	initialize: function() {
@@ -325,6 +340,12 @@ var UserAboutView = Parse.View.extend({
 		var renderedTemplate = this.userAboutTemplate;
 		this.$el.html(renderedTemplate);
 		return this;
+	},
+
+	logout: function() {
+		console.log('logging out');
+		Parse.User.logOut();
+		router.navigate('#/');
 	},
 });
 
