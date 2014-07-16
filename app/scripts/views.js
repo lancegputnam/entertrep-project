@@ -1,4 +1,4 @@
- "use strict";
+"use strict";
 
 ////// MARKETING PAGE VIEW /////////                           
 var HomeView = Parse.View.extend({
@@ -54,7 +54,7 @@ var SignUpView = Parse.View.extend({
 	},
 
 	register: function() {
-		router.navigate('#/user', {trigger: true});
+		router.navigate('#/settings', {trigger: true});
 
 		var username = $(".add-user-name").val();
 		var password = $(".add-password").val();
@@ -62,6 +62,7 @@ var SignUpView = Parse.View.extend({
 		var firstName = $(".add-first-name").val();
 		var lastName = $(".add-last-name").val();
 		var zipCode = $(".add-zip-code").val();
+		var cityState = $(".add-city-state").val();
 		var userProfile = $(".add-user-profile").val();
 		var businessProfile = $(".add-business-profile").val();
 
@@ -74,6 +75,7 @@ var SignUpView = Parse.View.extend({
 			user.set("zipcode", zipCode);
 			user.set("userProfile", userProfile);
 			user.set("businessProfile", businessProfile);
+			user.set("cityState", cityState);
 			 
 			user.signUp(null, {
 			  success: function(user) {
@@ -84,7 +86,7 @@ var SignUpView = Parse.View.extend({
 			    alert("Error: " + error.code + "Please ensure login information is correct" + error.message);
 	  		  }
 	});
-	}
+	},
 });
 
  //////// Vendor SIGN UP PAGE VIEW /////////
@@ -110,7 +112,7 @@ var VendorSignUpView = Parse.View.extend({
 	},
 
 	register: function() {
-		router.navigate('#/user', {trigger: true});
+		router.navigate('#/settings', {trigger: true});
 
 		var username = $(".add-user-name").val();
 		var password = $(".add-password").val();
@@ -118,6 +120,7 @@ var VendorSignUpView = Parse.View.extend({
 		var firstName = $(".add-first-name").val();
 		var lastName = $(".add-last-name").val();
 		var zipCode = $(".add-zip-code").val();
+		var cityState = $(".add-city-state").val();
 		var userProfile = $(".add-user-profile").val();
 		var businessProfile = $(".add-business-profile").val();
 
@@ -129,7 +132,8 @@ var VendorSignUpView = Parse.View.extend({
 			user.set("lastName", lastName);
 			user.set("zipcode", zipCode);
 			user.set("userProfile", userProfile);
-			user.set("businessProfile", businessProfile)
+			user.set("businessProfile", businessProfile);
+			user.set(".add-city-state", cityState);
 			 
 			user.signUp(null, {
 			  success: function(user) {
@@ -140,7 +144,7 @@ var VendorSignUpView = Parse.View.extend({
 			    alert("Error: " + error.code + "Please ensure login information is correct" + error.message);
 	  		  }
 	});
-	}
+	},
 });
 
  //////// SETTINGS PAGE VIEW /////////
@@ -152,7 +156,7 @@ var SettingsView = Parse.View.extend({
 
 	events: {
 		"click .create-button" : "addSettings",
-		"click .upload-button" : "uploadPhoto",
+		"click .upload-button"   : "uploadPhoto",
 	},
 
 	initialize: function() {
@@ -170,7 +174,6 @@ var SettingsView = Parse.View.extend({
 		router.navigate('#/settings', {trigger: true});
 
 		
-		var email = $(".add-email").val();
 		var firstName = $(".add-first-name").val();
 		var lastName = $(".add-last-name").val();
 		var cityState = $(".add-city-state").val();
@@ -181,13 +184,13 @@ var SettingsView = Parse.View.extend({
 
 		var user = Parse.User.current();
 			
-			user.save("email", email);
 			user.save("firstName", firstName);
 			user.save("lastName", lastName);
 			user.save("occupation", occupation);
 			user.save("company", company);
 			user.save("website", website);
 			user.save("aboutMe", aboutMe);
+			user.save("cityState", cityState);
 
 			 
 			user.save(null, {
@@ -222,8 +225,8 @@ var SettingsView = Parse.View.extend({
 		}, function(error) {
   			console.log('The file either could not be read, or could not be saved to Parse.');
 		});
-	
-	}
+	},
+
 });
 
 /////// LOGIN VIEW ////////// 
@@ -235,7 +238,8 @@ var LoginView = Parse.View.extend({
 
 	events: {
 		"click .submit-button"		 : "login",
-		"click .signup-login-button" : "signUp"
+		"click .signup-login-button" : "signUp",
+		"click .logout-button"		 : "logout",	
 	},
 
 	initialize: function () {
@@ -273,11 +277,7 @@ var LoginView = Parse.View.extend({
 
 	logout: function() {
 		console.log('logging out');
-		$(".logout-button").click(function(){
-		Parse.User.logout();
-		var currentUser = Parse.User.current();
-		});
-
+		Parse.User.logOut();
 		router.navigate('#/');
 	},
 });

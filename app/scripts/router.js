@@ -36,6 +36,7 @@ var AppRouter = Parse.Router.extend({
 	},
 
 	submitUser: function() {
+		
 		$('.main-container').html('');
 		new UserView(Parse.User.current().attributes);
 	},

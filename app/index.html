@@ -175,17 +175,11 @@
                    <input type='text' placeholder='Email:' class="add-email" />
                    <input type='text' placeholder='Zip Code:' class="add-zip-code" />
                    <input type='text' placeholder='Username:' class="add-user-name" />
-                   <input type='text' placeholder='Password:' class="add-password" />
+                   <input type='text' type="password" placeholder='Password:' class="add-password" />
                    <button type= 'submit' class='register-button button'> register </button>
                  </form>
                     <a href='#/pricing'><button class="clear-button button"> view pricing </button></a>
               </div>
-
-            <div class="add-photo-section">
-                <h2> add your profile photo </h2>
-                <input type="file" class="file-uploader" placeholder="select file"/>
-                <button type= 'submit' class='upload-button button'> upload </button> 
-            </div>
              
               <div class='sign-info'>
                 <h1>Trep Account</h1>
@@ -256,12 +250,6 @@
                  </form>
                     <a href='#/pricing'><button class="clear-button button"> view pricing </button></a>
               </div>
-
-            <div class="add-photo-section">
-                <h2> add your profile photo </h2>
-                <input type="file" class="file-uploader" placeholder="select file"/>
-                <button type= 'submit' class='upload-button button'> upload </button> 
-            </div>
              
               <div class='sign-info'>
                 <h1>Business Account</h1>
@@ -453,6 +441,7 @@
             <a href="#/user"><input type="submit" class="submit-button" value="log in" /></a>
             <a href="#/signup"><input type="submit" class="signup-login-button" value="sign up" /></a>
           </form>
+            <a href="#"><input type="submit" class="logout-button" value="log out" /></a>
         </div>
     </script>
 
@@ -539,18 +528,23 @@
                 <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
                     <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
-                    <a href="#/pricing"><spanicon class="entypo-folder" title="pricing"></spanicon></a>
+                    <a href="#/vendor"><spanicon class="entypo-folder" title="pricing"></spanicon></a>
                     <a href="#/settings"><spanicon class="entypo-vcard" title="settings"></spanicon></a>
                     <a href="#/login"><spanicon class="entypo-retweet" title="login/logout"></spanicon></a>
                 </div>
         </div>
+
+        <div class="add-photo-section">
+                <h2> add your profile photo </h2>
+                <input type="file" class="file-uploader" placeholder="select file"/>
+                <button type= 'submit' class='upload-button button'> upload </button> 
+            </div>
 
         <div class='signup-container-settings'>
               <div class='signup'>
                  <form>
                    <input type='text' placeholder='Edit First Name:' class="add-first-name" />
                    <input type='text' placeholder='Edit Last Name:' class="add-last-name" />
-                   <input type='text' placeholder='Edit Email:' class="add-email" />
                    <input type='text' placeholder='City, State' class="add-city-state" />
                    <input type='text' placeholder='Occupation' class="add-occupation" />
                    <input type='text' placeholder='Company Name' class="add-company" />
@@ -561,16 +555,12 @@
               </div>
         </div>
 
-
-
         <div class="profiles-settings">
             <h1> Build Your Profile </h1>
             <h2> expand your reach to manufacturers and mentors </h2>
         </div>
         <div class="indepth-photo-settings"><img src="https://farm3.staticflickr.com/2899/14519608855_a4ab100a2c_o.jpg"></img>
         </div>
-
-
 
          <div class="footer-settings">
                 <div class="social-media-links-settings" style="color: white">
@@ -603,15 +593,17 @@
         <div class="user-container">
             <div class="left-container">
                 <div class="profile-photo">
-                    <img src=" <%= Parse.User.current().attributes.ProfilePicture._url %> "/>
+                    <img src="http://www.selectism.com/news/wp-content/uploads/2010/11/lotuff-clegg-factory-tour-15.jpg"></img>
+                    <button class="connect-button"> connect </button>
                 </div>
 
                 <div class="user-info">
                     <ul style="list-style: none;">
                         <li> 
-                            <spaninfo> <%= Parse.User.current().attributes.company %> </spaninfo>
-                            <spaninfo> <%= Parse.User.current().attributes.cityState %> </spaninfo>
-                            <spaninfo> <%= Parse.User.current().attributes.website %> </spaninfo>
+                            <spaninfo> 500 Lebanon Road </spaninfo>
+                            <spaninfo> Pendelton, SC 29670 </spaninfo>
+                            <spaninfo> (864) 646-8454 </spaninfo>
+                            <a href> <spaninfo> car.clemson.edu </spaninfo> </a>
                         </li>
                     </ul>
                 </div>
@@ -622,12 +614,25 @@
             </div>
 
             <div class="right-container">
-                <h1><spaninfo> <%= Parse.User.current().attributes.company %> </spaninfo></h1>
-                <h2> <%= Parse.User.current().attributes.occupation %> </h2>
-                <div class="userbar"></div>
-                <div class="about-vendor">
-                    <spaninfo> <%= Parse.User.current().attributes.aboutMe %> </spaninfo>
+                <h1><spaninfo> Clemson Apparel Research Facility </spaninfo></h1>
+                <h2> Clemson University </h2>
+                <div class="vendor-userbar"></div>
+
+                <div class="vendor-images-pad">
+                        <img src="http://www.mrketplace.com/wp-content/uploads/2013/05/Barbour-Factory-sized-jackets-.jpg"></img>
+                        <img src="http://blog.stevenalan.com/wp-content/uploads/2012/06/Lotuff-Factory-2_blog.jpg"></img>
+                        <img src="http://i1.chroniclelive.co.uk/incoming/article1723753.ece/alternates/s615/1493789.jpg"></img>
                 </div>
+
+                <div class="about-vendor">
+                    <spaninfo> 
+                        Clemson Apparel Research (CAR) was established to revitalize the domestic sewn-products industry through the proper application of advanced technology and management practices. It is now a premier national resource for high-performance textiles and related materials research and applications. Its fast-turn manufacturing and supply chain optimization solutions are being applied very effectively to industries other than sewn products. </spaninfo>
+                </div>
+                <div class="vendor-services">
+                    <spaninfo> Industries Served: <br>Apparel, Medical Supplies, Military Supplies </spaninfo>
+                    <spaninfo> Size Capacity: <br> Small to Medium Sized Runs; up to 5,000 pieces </spaninfo>
+                    <spaninfo> Works With:<br> Students, Beginners, Mid-Sized </spaninfo>
+                </div> 
             </div>
         </div>
 

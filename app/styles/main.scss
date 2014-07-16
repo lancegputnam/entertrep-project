@@ -1106,18 +1106,23 @@ float:left;
 
 textarea {
     margin-left: 7px;
-    margin-top: 55px;
+    margin-top: 125px;
 }
 
 .add-photo-section {
   position: absolute;
-  margin-left: 345px;
-  margin-top: 387px;
+  margin-left: 246px;
+  margin-top: 375px;
 }
 
 .add-photo-section h2 {
-      font-family: "GeosansLight", sans-serif;
-      color: #2B547E;
+    font-family: "GeosansLight", sans-serif;
+    color: #A9A8A6;
+    font-size: 17px;
+}
+
+.upload-button {
+  margin-left: -56px;
 }
 
 //////////// VENDOR PROFILE ///////////
@@ -1135,6 +1140,56 @@ textarea {
 
 .about-vendor {
     margin-left: -139px;
-    margin-top: 20px;
+    margin-top: 75px;
     width: 550px;
+}
+
+.vendor-userbar {
+    width: 550px;
+    height: 5px;
+    background-color: #2B547E;
+    margin-top: -15px;
+    margin-left: -140px;
+}
+
+.vendor-services {
+  margin-top: 100px;
+}
+
+.vendor-services spaninfo {
+  margin-left: -138px;
+  margin-top: 25px;
+  display: block;
+}
+
+.connect-button {
+  font-family: "GeosansLight", sans-serif;
+  margin-top: 27px;
+  width: 15%;
+  border: 0;
+  background-color: #F5E2AD;
+  border-radius: 2px;
+  height: 28px;
+  color: #453534;
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 105px;
+}
+
+.profile-photo button {
+  margin-top: 15px;
+  margin-left: 355px;
+  margin-bottom: 50px;
+}
+
+.vendor-images-pad {
+    margin-top: 50px;
+    margin-left: -137px;
+    word-spacing: 45px;
+    font-family: helvetica, sans-serif;
+}
+
+.vendor-images-pad img {
+    width: 150px;
+    height: 150px;
 }
