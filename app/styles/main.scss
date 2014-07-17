@@ -14,9 +14,9 @@ text-decoration:none;}
 }
 
 body {
-    background: #fafafa;
+    background: #FFFFFF;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #624B4A;
     width: 100%;
     margin: 0; 
     padding: 0;
@@ -35,7 +35,7 @@ body {
     }
 
     a:hover {
-        color: #2B547E;
+        color: #FDC067;
     }
 }
 
@@ -113,7 +113,7 @@ div#wrap{
 
 .icons {
     float: right;
-    margin: .488em 4% 0 0;
+    margin: .488em 2% 0 0;
     word-spacing: 1.250em;
     font-size: 25px;
 }
@@ -128,19 +128,19 @@ div#wrap{
 
 .signup-button, .signup-button-two, .login-button {
     font-family: "GeosansLight", sans-serif;
+    font-weight: bold;
     margin-top: 27px;
-    width: 8%;
+    width: 11%;
     border: 0;
     background-color: #F5E2AD;
     border-radius: 2px;
     height: 50px;
     color: #453534;
-    font-weight: 400;
     font-size: 1em;
 }
 
 .signup-button {
-    margin: -21.75rem 0 0 76%;
+    margin: -21.75rem 0 0 72%;
     position: absolute;
 }
 
@@ -155,7 +155,7 @@ div#wrap{
 }
 
 .signup-button-two {
-    margin: 22.50rem 0 0 35%;
+    margin: 19.50rem 0 0 47%;
     position: absolute
 }
 
@@ -182,13 +182,11 @@ div#wrap{
     font-family: "Code Bold", sans-serif;
     font-size: 3em;
     text-align: left;
-    color: #2B547E;
 }
 
 .first-title h1 {
     font-family: "Code Bold", sans-serif;
     font-size: 3em;
-    color: #2B547E;
 }
 
 .second-paragraph {
@@ -215,7 +213,6 @@ div#wrap{
     margin-top: 3.125em;
     font-family: "Code Bold", sans-serif;
     font-size: 3em;
-    color: #2B547E;
 }
 
 .indepth-photo img {
@@ -227,7 +224,6 @@ div#wrap{
 
     h1 {
         margin: 3.125em 0 0 37%;
-        color: #2B547E;
     }
 }
 
@@ -251,7 +247,6 @@ div#wrap{
 
     h1 {
         margin: 3.125em 35% 0 0;
-        color: #2B547E;
     }
 }
 
@@ -274,7 +269,6 @@ div#wrap{
 
     h1 {
         margin: 3.125em 0 0 35%;
-        color: #2B547E;
     }
 }
 
@@ -293,20 +287,29 @@ div#wrap{
 }
 
 .middle-image {
-    img {
-    margin-top: 10.250em;
-    width: 100%;
-    height: 23.750em;
-    }
-
     h1 {
         font-family: "Code Bold", sans-serif;
+        font-size: 5em;
         color: white;
-        margin: 9.375em 0 0 4%;
+        margin: 1.2em 0 0 22%;
+        position: absolute;
+    }
+
+    h2 {
+        font-family: "Code Bold", sans-serif;
+        font-size: 3.4em;
+        color: white;
+        margin: 4em 0 0 5%;
         position: absolute;
     }
 }
 
+.breaker-bar {
+    margin-top: 10.250em;
+    width: 100%;
+    height: 23.750em;
+    background-color: #BEDCC4;
+}
 
 .container-two {
     margin: 3.125em 20% 3.125em 20%;
@@ -317,7 +320,6 @@ div#wrap{
     font-family: "Code Bold", sans-serif;
     margin: 20% -49% 5% 0;
     font-size: 1.563em;
-    color: #2B547E;
 }
 
 .vendor-image {
@@ -353,7 +355,6 @@ div#wrap{
     margin-top: 25%;
     font-size: 3em;
     font-family: "Code Bold", sans-serif;
-    color: #2B547E;
 }
 
 .features {
@@ -444,33 +445,19 @@ div#wrap{
 
 
 .vendor-selector-button, .user-selector-button {
-    color: #453534;
-    text-decoration: none;
-    background-color: #F5E2AD;
-    font-family: "GeosansLight", sans-serif;
-    font-size: 1.5em;
-    padding: 4px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-box-shadow: 0px 5px 0px #FDC067, 0px 5px 15px rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 5px 0px #FDC067, 0px 5px 15px rgba(0,0,0,.7);
-    box-shadow: 0px 5px 0px #FDC067, 0px 5px 15px rgba(0,0,0,.7);
-    margin-top: 30px;
-    text-align: center;
-    display: block;
-  
-    -webkit-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    -ms-transition: all .1s ease;
-    -o-transition: all .1s ease;
-    transition: all .1s ease;
-}
-
-.vendor-selector-button:active, .user-selector-button:active {
-    box-shadow: 0px 2px 0px #FDC067, 0px 2px 4px rgba(0,0,0,.9);
-    position: relative;
-    top: 6px;
+  font-family: "GeosansLight", sans-serif;
+  margin-top: 30px;
+  width: 15%;
+  border: 0;
+  padding: 4px;
+  background-color: #F5E2AD;
+  border-radius: 2px;
+  height: 50px;
+  color: #453534;
+  font-weight: 400;
+  font-size: 1.5em;
+  display: block;
+  text-decoration: none;
 }
 
 .signup-buttons {
@@ -480,7 +467,7 @@ div#wrap{
 
 .signup-container {
     width: 840px;
-    margin: -110px 325px;
+    margin: -130px 325px;
     color: #2B547E;
     font: 1em Helvetica;
 }
@@ -572,20 +559,20 @@ button:hover{
   border-color: #2B547E;
 }
 
-span {
-  font-size: .75em;
-  background-color: #9CB8A9;
-  padding: 2px 5px;
-  color: #453534;
-  border-radius: 2px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  margin: 5px;
-  line-height: 2.5;
-}
+// span {
+//   font-size: .75em;
+//   background-color: #9CB8A9;
+//   padding: 2px 5px;
+//   color: #453534;
+//   border-radius: 2px;
+//   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+//   margin: 5px;
+//   line-height: 2.5;
+// }
 
-span:hover {
-  color: #2B547E;
-}
+// span:hover {
+//   color: #2B547E;
+// }
 
 .wrapper p {
     margin-top: 23px;
@@ -632,12 +619,12 @@ span:hover {
 }
 
 .topbar a:hover {
-    color: #2B547E;
+    color: #FDC067;
 }
 
 .icons {
     float: right;
-    margin: .488em 4% 0 0;
+    margin: .488em 2% 0 0;
     word-spacing: 1.250em;
 }
 
@@ -650,7 +637,7 @@ float:left;
 }
 
 .search {
-    width:300px;
+    width:220px;
     position:relative; 
     top:7px; 
     padding:8px 5px 8px 30px;
@@ -663,7 +650,7 @@ float:left;
     position:relative; 
     top:7;
     padding:8px 5px 8px;
-    margin-left:-72px;
+    margin-left:-71px;
     border:none;
     background-color: #453534;
     margin-top: 9px;
@@ -1203,22 +1190,25 @@ textarea {
     width: 100%;
     height: 6.250em;
     background-color: #9CB8A9; 
-    margin-top: 90em;
+    margin-top: 15em;
     position: absolute;
 }
 
 .about-vendor {
     margin-left: -139px;
-    margin-top: 75px;
-    width: 550px;
+    margin-top: 83px;
+    width: 340px;
+    font-family: "GeosansLight", sans-serif;
+    color: #453534;
+    font-size: 1.25em
 }
 
 .vendor-userbar {
-    width: 550px;
+    width: 930px;
     height: 5px;
-    background-color: #2B547E;
-    margin-top: -15px;
-    margin-left: -140px;
+    background-color: #F5E2AD;    
+    margin-top: 80px;
+    margin-left: 221px;
 }
 
 .vendor-services {
@@ -1233,29 +1223,39 @@ textarea {
 
 .connect-button {
   font-family: "GeosansLight", sans-serif;
-  margin-top: 27px;
+  margin-top: -97px;
   width: 15%;
   border: 0;
   background-color: #F5E2AD;
   border-radius: 2px;
-  height: 28px;
+  height: 40px;
   color: #453534;
   font-weight: 400;
-  font-size: 1em;
-  margin-left: 105px;
+  font-size: 1.5em;
+  margin-left: 465px;
+  position: absolute;
 }
 
-.profile-photo button {
-  margin-top: 15px;
-  margin-left: 355px;
-  margin-bottom: 50px;
+.header-title button {
+  margin-top: -47px;
+  margin-left: -632px;
+  width: 90px;
+  position: absolute;
+}
+
+.profile-photo spaninfo {
+  margin-left: 700px;
+  margin-top: 900px;
+  position: absolute;
+  color: #2B547E;
+  font-family: "GeosansLight", sans-serif;
+  font-size: 2.5em;
 }
 
 .vendor-images-pad {
-    margin-top: 50px;
-    margin-left: -137px;
+    margin-top: 15px;
+    margin-left: 222px;
     word-spacing: 45px;
-    font-family: helvetica, sans-serif;
 }
 
 .vendor-images-pad img {
@@ -1263,10 +1263,118 @@ textarea {
     height: 150px;
 }
 
+.locate-section img {
+  width: 300px;
+  height: 300px;
+  border-radius: 160px;
+  margin-top: 370px;
+  margin-left: -120px;
+}
 
+.header-image img {
+  width: 100%;
+  height: 300px;
+}
 
+.header-logo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  margin-top: -140px;
+  margin-left: 200px;
+}
 
+.vendor-title {
+  margin-left: 485px;
+  margin-top: -120px;
+}
 
+.vendor-title h1 {
+  font-family: "Code Bold", sans-serif;
+  font-size: 2.5em;
+  color: #453534;
+}
 
+.vendor-title h2 {
+  margin-top:  -20px;
+  font-family: "GeosansLight", sans-serif;
+  color: #453534;
+}
 
+.main-box-image img {
+  width: 550px;
+  height: 325px;
+  margin-top: 90px;
+  margin-left: 225px;
+}
 
+.vendor-info {
+  margin-top: 810px;
+  margin-left: 0px;
+}
+
+.vendor-info spaninfo {
+    display: block;
+    font-family: "GeosansLight", sans-serif;
+    color: #453534;
+    margin: 10px;
+    margin-left: 250px;
+    font-size: 18px;
+}
+
+.vendor-info span {
+    display: block;
+    font-family: "GeosansLight", sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 250px;
+    font-size: 30px;
+    color: #9CB8A9
+}
+
+.vendor-social-info span {
+    font-family: "GeosansLight", sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 30px;
+    color: #9CB8A9
+}
+
+.vendor-social-info {
+  margin-left: 500px;
+  margin-top: -180px;
+}
+
+.vendor-social-info img {
+  width: 120px;
+  height: 120px;
+  margin-left: 40px;
+  margin-top: -9px;
+}
+
+.header-title button {
+  margin-top: -47px;
+  margin-left: -632px;
+  width: 90px;
+  position: absolute;
+}
+
+.left-vendor-container {
+  float:left;
+  width: 65%;
+}
+
+.right-vendor-container {
+  float: right;
+  width: 27%;
+}
+
+.vendor-info spantop {
+  font-family: "GeosansLight", sans-serif;
+  font-weight: bold;
+  margin-left: 245px;
+  color: #9CB8A9;
+  font-size: 2.5em;
+  margin-top: -95px;
+  position: absolute;
+}

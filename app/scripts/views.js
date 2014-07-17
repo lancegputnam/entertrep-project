@@ -178,7 +178,7 @@ var SettingsView = Parse.View.extend({
 	},
 
 	addSettings: function() {
-		router.navigate('#/settings', {trigger: true});
+		router.navigate('#/user', {trigger: true});
 
 		
 		var firstName = $(".add-first-name").val();
