@@ -36,7 +36,7 @@
 
         <!---template for home page view --> 
         <script type="text/template" class="home-template">
-            <div class="topbar">
+            <div class="topbar" id="topbar">
                 <a href="#"><div class="information"><spaninfo> EnterTrep </spaninfo> </div></a>
                 <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
@@ -154,6 +154,10 @@
                         <li>Social Media</li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="back-to-top-button">
+                <a href="#topbar"><img src="http://www.clipartbest.com/cliparts/zxT/gkL/zxTgkLXiA.png"></a>
             </div>
 
             <div class="footer">
@@ -290,6 +294,7 @@
         <div class="topbar">
                 <input type="text" class="search left rounded" value="" />
                 <button class="go-left-button button"><spansearch>Search</spansearch></button>
+                <a href="#"><span> EnterTrep </span></a>
            <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
                     <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
@@ -385,6 +390,7 @@
         <div class="topbar">
                 <input type="text" class="search left rounded" value="" />
                 <button class="go-left-button button"><spansearch>Search</spansearch></button>
+                <a href="#"><span> EnterTrep </span></a>
            <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
                     <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
@@ -462,14 +468,16 @@
 
     <!-- template for Login View -->
     <script type="text/template" class="login-template">
-        <div id="login">
-          <h1>EnterTrep</h1>
-          <form>
-            <input class="enter-username" type="username" placeholder="Username" />
-            <input class="enter-password" type="password" placeholder="Password" />
-            <a href="#/user"><input type="submit" class="submit-button" value="log in" /></a>
-            <a href="#/signup"><input type="submit" class="signup-login-button" value="sign up" /></a>
-          </form>
+        <div class="whole-page">
+            <div id="login">
+              <h1>EnterTrep</h1>
+              <form>
+                <input class="enter-username" type="username" placeholder="Username" />
+                <input class="enter-password" type="password" placeholder="Password" />
+                <a href="#/user"><input type="submit" class="submit-button" value="LOGIN" /></a>
+                <a href="#/signup"><input type="submit" class="signup-login-button" value="SIGN UP" /></a>
+              </form>
+            </div>
         </div>
     </script>
 
@@ -505,7 +513,7 @@
                 <li class="plan-feature">unlimited <spaninfo class="plan-feature-name">projects</spaninfo></li>
                 <li class="plan-feature"><spaninfo class="plan-feature-name">message factories</spaninfo></li>
               </ul>
-              <a href="#/signup" class="plans-button">Sign Up</a>
+              <a href="#/signup" class="plans-button">SIGN UP</a>
             </div>
             <div class="plan plan-highlight">
               <p class="plan-recommended"> Recommended</p>
@@ -519,7 +527,7 @@
                 <li class="plan-feature">unlimited <spaninfo class="plan-feature-name">projects</spaninfo></li>
                 <li class="plan-feature"><spaninfo class="plan-feature-name">message factories</spaninfo></li>
               </ul>
-              <a href="#/signup" class="plan-button">Sign Up</a>
+              <a href="#/signup" class="plan-button">SIGN UP</a>
             </div>
             <div class="plan">
               <h3 class="plan-bus-title">Business Starter</h3>
@@ -529,10 +537,10 @@
                 <li class="plan-feature"><spaninfo class="plan-feature-name">Exposure to Entrepreneurs</spaninfo></li>
                 <li class="plan-feature"><spaninfo class="plan-feature-name">Filtered Search</spaninfo></li>
               </ul>
-              <a href="#/signup" class="planner-button">Sign Up</a>
+              <a href="#/signup" class="planner-button">SIGN UP</a>
             </div>
             <div class="plan">
-              <h3 class="plan-bus-title">Business Professional</h3>
+              <h3 class="plan-bus-title"> Professional</h3>
               <p class="plan-bus-price">$49 <spaninfo class="plan-unit">per month</spaninfo></p>
               <ul class="plan-features" style="list-style: none;">
                 <li class="plan-feature">10<spaninfo class="plan-feature-unit">GB</spaninfo> <spaninfo class="plan-feature-name">storage</spaninfo></li>
@@ -540,7 +548,7 @@
                 <li class="plan-feature"><spaninfo class="plan-feature-name">Filtered Search</spaninfo></li>
                 <li class="plan-feature"><spaninfo class="plan-feature-name">Increased Advertising</spaninfo></li>
               </ul>
-              <a href="#/signup" class="plan-button">Sign Up</a>
+              <a href="#/signup" class="plan-button">SIGN UP</a>
             </div>
         </div>
 
@@ -626,6 +634,7 @@
         <div class="topbar">
                 <input type="text" class="search left rounded" value="" />
                 <button class="go-left-button button"><spansearch>Search</spansearch></button>
+                <a href="#"><span> EnterTrep </span></a>
            <div class="icons">
                     <a href="#"><spanicon class="entypo-home" title="home"></spanicon></a>
                     <a href="#/user"><spanicon class="entypo-user"title="profile page"></spanicon></a>
@@ -680,7 +689,8 @@
         <div class="right-vendor-container">
             <div class="about-vendor">
                 <spaninfo> 
-                    Clemson Apparel Research (CAR) was established to revitalize the domestic sewn-products industry through the proper application of advanced technology and management practices. It is now a premier national resource for high-performance textiles and related materials research and applications. Its fast-turn manufacturing and supply chain optimization solutions are being applied very effectively to industries other than sewn products. </spaninfo>
+                    Clemson Apparel Research (CAR) was established to revitalize the domestic sewn-products industry through the proper application of advanced technology and management practices. It is now a premier national resource for high-performance textiles and related materials research and applications. Its fast-turn manufacturing and supply chain optimization solutions are being applied very effectively to industries other than sewn products. 
+                </spaninfo>
             </div>
             <div class="locate-section">
                 <img src="https://farm4.staticflickr.com/3854/14487091977_dbcde7d7ef_o.png">
@@ -707,7 +717,7 @@
                         <span>   connect </span>
                     </li>
                 </ul>
-                <img src="http://www.hadewallpapers.com/wp-content/uploads/2014/04/social-media-icons-for-blogs-2.jpg"/>
+                <img src="http://www.utargeting.co.uk/wp-content/uploads/2014/06/Social-Media-Icons-2.png"/>
             </div>
         </div> 
 

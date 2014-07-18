@@ -28,7 +28,6 @@ body {
     background-color: #9CB8A9; 
     top: 0; 
     right: 0;
-    // position: fixed;
 
     a {
         color: #453534;
@@ -37,6 +36,14 @@ body {
     a:hover {
         color: #FDC067;
     }
+}
+
+.topbar span {
+  font-family: "Code Bold", sans-serif; 
+  margin-left: 287px;
+  margin-top: 10px;
+  font-size: 2em; 
+  position: absolute;
 }
 
 div.menu_wrap > input[type=checkbox]{
@@ -75,8 +82,12 @@ font-size: .7em;
 }
 
 div.menu_wrap > ul > li:hover{
-  color: #453534;
+  color: #FDC067;
   cursor: pointer;
+}
+
+.entypo-retweet:hover {
+  color: #FDC067;
 }
 
 div.menu_wrap{ 
@@ -89,19 +100,20 @@ div.menu_wrap{
 }
 
 div.menu_wrap:last-child{
-float: right;}
+  float: right;
+}
 
 div.menu_wrap{
-clear: right;
+  clear: right;
 }
 
-div#wrap{
-  width: 400px;
-  margin: 0px auto;
-  background-color: #cdcdcd;
-  height: 200px;
-  padding: 20px;
-}
+// div#wrap{
+//   width: 400px;
+//   margin: 0px auto;
+//   background-color: #cdcdcd;
+//   height: 200px;
+//   padding: 20px;
+// }
 
 .information {
     float: left;
@@ -422,6 +434,14 @@ div#wrap{
     }
 }
 
+.back-to-top-button img {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 100px;
+}
+
 .footer {
     width: 100%;
     height: 6.250em;
@@ -492,7 +512,7 @@ div#wrap{
     width: 480px;
     height: 465px;
     border-radius: 0 5px 5px 0;
-    padding-top: 19px;
+    padding-top: 24px;
     padding-right: 20px;
 }
 
@@ -524,13 +544,13 @@ div#wrap{
   margin: 0 auto;
   width: 80%;
   border: 0;
-  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-bottom: 2px solid rgba(0,0,0,.2);
   height: 45px;
   line-height: 45px;  
   margin-bottom: 10px;
   font-size: 1em;
   font-weight: bold;
-  color: rgba(0,0,0,.4);
+  color: #624B4A;
 }
 
 .register-button {
@@ -701,12 +721,13 @@ float:left;
     margin: 10px;
     margin-left: 210px;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .userbar {
     width: 550px;
     height: 25px;
-    background-color: #E5E4E2;
+    background-color: #9CB8A9;
     margin-top: -15px;
     margin-left: -140px;
 }
@@ -714,14 +735,14 @@ float:left;
 .right-container h1 {
     margin-top: 65px;
     margin-left: -140px;
-    font-family: helvetica, sans-serif;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .right-container h2 {
     margin-top: -20px;
     margin-left: -140px;
     margin-bottom: 25px;
-    font-family: helvetica, sans-serif;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .userbar li {
@@ -730,17 +751,18 @@ float:left;
     font-size: 20px;
     font-family: "GeosansLight", sans-serif;
     margin-left: -27px;
+    font-weight: bold;
 
     :hover {
-      color: #2B547E;
+      color: #362a29;
     }
 }
 
 .images-idea-pad {
     margin-top: 30px;
     margin-left: -137px;
-    word-spacing: 20px;
-    font-family: helvetica, sans-serif;
+    word-spacing: 43px;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .images-idea-pad img {
@@ -751,8 +773,8 @@ float:left;
 .images-inspiration-pad {
     margin-top: 50px;
     margin-left: -137px;
-    word-spacing: 20px;
-    font-family: helvetica, sans-serif;
+    word-spacing: 43px;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .images-inspiration-pad img {
@@ -763,14 +785,14 @@ float:left;
 .images-note-pad {
     margin-top: 50px;
     margin-left: -137px;
-    word-spacing: 20px;
-    font-family: helvetica, sans-serif;
+    word-spacing: 43px;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .friends-group {
     margin-left: 250px;
     margin-top: 50px;
-    font-family: helvetica, sans-serif;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .friends-group:hover {
@@ -780,7 +802,7 @@ float:left;
 .business-group {
     margin-left: 250px;
     margin-top: 50px;
-    font-family: helvetica, sans-serif;
+    font-family: "GeosansLight", sans-serif;
 }
 
 .business-group:hover {
@@ -819,20 +841,20 @@ float:left;
   -webkit-transition:opacity 1s;
 }
 
-#triangle{
-  width:0;
-  border-top:12x solid transparent;
-  border-right:12px solid transparent;
-  border-bottom:12px solid #3399cc;
-  border-left:12px solid transparent;
-  margin:0 auto;
-}
+// #triangle{
+//   width:0;
+//   border-top:12x solid transparent;
+//   border-right:12px solid transparent;
+//   border-bottom:12px solid #3399cc;
+//   border-left:12px solid transparent;
+//   margin:0 auto;
+// }
 
 #login h1{
-  background:#9CB8A9;
+  background:#F5E2AD;
   padding:20px 0;
   text-align:center;
-  color:#fff;
+  color:#453534;
   font-family: "Code Bold", sans-serif;
   font-weight: lighter;
 }
@@ -850,7 +872,7 @@ float:left;
 
 .submit-button[type="submit"], .signup-login-button[type="submit"]{
   width:100%;
-  background:#9CB8A9;
+  background:#F5E2AD;
   border:0;
   padding:4%;
   font-family: "GeosansLight", sans-serif;
@@ -889,21 +911,21 @@ float:left;
 .plan-title {
   margin-bottom: 12px;
   font-size: 24px;
-  color: #2B547E;
+  color: #453534;
 }
 
 .plan-rec-title {
   margin-bottom: 12px;
   font-size: 24px;
-  color: #2B547E;
+  color: #453534;
   margin-top: 35px;
 }
 
 .plan-bus-title {
   margin-bottom: 12px;
   font-size: 24px;
-  color: #2B547E;
-  margin-top: 15px;
+  color: #453534;
+  margin-top: 26px;
 }
 
 .plan-price {
@@ -928,7 +950,7 @@ float:left;
   margin-top: 5px;
   font-size: 13px;
   font-weight: normal;
-  color: #aaa;
+  color: #736F6E;
 }
 
 .plan-features {
@@ -943,7 +965,7 @@ float:left;
   line-height: 20px;
   font-size: 13px;
   font-weight: 500;
-  color: #2B547E;
+  color: #453534;
 
   & + & { margin-top: 5px; }
 }
@@ -956,7 +978,7 @@ float:left;
 .plan-feature-name {
   font-size: 13px;
   font-weight: normal;
-  color: #aaa;
+  color: #736F6E;
 }
 
 .plan-button, .planner-button, .plans-button {
@@ -964,15 +986,14 @@ float:left;
   display: block;
   line-height: 40px;
   font-size: 16px;
-  font-weight: 500;
-  color: white;
+  color: #453534;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 1px rgba(black, .1);
   background: #FDC067;
-  border-bottom: 2px solid #cf7e3b;
   border-color: rgba(black, .15);
-  border-radius: 4px;
+  border-radius: 2px;
+  font-family: "GeosansLight", sans-serif;
 
   &:active {
     top: 2px;
@@ -1146,7 +1167,7 @@ float:left;
       margin-top: .125em;
       font-family: "Code Bold", sans-serif;
       font-size: 3em;
-      color: #2B547E;
+      color: #624B4A;
       position: absolute;
       margin-left: 655px;
     }
@@ -1154,7 +1175,7 @@ float:left;
     h2 {
       margin-top: 50px;
       font-family: "GeosansLight", sans-serif;
-      color: #2B547E;
+      color: #FDC067;
       font-size: 1.5em;
       margin-left: 26.5em;
       position: absolute;
@@ -1181,8 +1202,8 @@ textarea {
 
 .add-photo-section {
   position: absolute;
-  margin-left: 246px;
-  margin-top: 375px;
+  margin-left: 260px;
+  margin-top: 397px;
 }
 
 .add-photo-section h2 {
