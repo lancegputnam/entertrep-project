@@ -2,7 +2,6 @@
 // endbower
 
 ///////// MARKETING PAGE DESIGN /////////
-
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 *{
 -webkit-font-smoothing:antialiased;
@@ -130,307 +129,409 @@ div.menu_wrap{
     font-size: 25px;
 }
 
-.main-image img {
-    width: 100%;
-}
+.main-image {
 
-.feature-links {
-    margin: -42.188em 0 0 70%;
+    .main-buttons {
+    margin-right: 10%;
+    position: relative;
+
+    .login-button {
+    margin-right: 15%;
+    float: right;
+    margin-top: -20em;
+    }
+
+    .signup-button {
+    float: right;
+    margin-top: -20em;
+    }
+    }
+
+    .entertrep-image {
+    img {
+    width: 100%;
+    }
+  } 
 }
 
 .signup-button, .signup-button-two, .login-button {
     font-family: "GeosansLight", sans-serif;
     font-weight: bold;
-    margin-top: 27px;
-    width: 11%;
+    width: 100%;
+    min-width: 50px;
+    max-width: 150px;
     border: 0;
     background-color: #F5E2AD;
     border-radius: 2px;
-    height: 50px;
     color: #453534;
     font-size: 1em;
-}
-
-.signup-button {
-    margin: -21.75rem 0 0 72%;
-    position: absolute;
+    padding: 18px;
 }
 
 .signup-button:hover,.signup-button-two:hover, .login-button:hover{
   background:#FDC067;
 }
 
-.login-button {
-    position: absolute;
-    margin-top: -21.75em;
-    margin-left: 85%;
+
+@media screen and (max-width: 1230px) {
+  .main-image {
+
+    .main-buttons {
+    margin-right: 9%;
+
+    .login-button {
+    margin-right: 18%;
+    margin-top: -15em;
+    }
+
+    .signup-button {
+    margin-top: -15em;
+    }
+    }
+}
 }
 
-.signup-button-two {
-    margin: 17.50rem 0 0 47%;
-    position: absolute
+@media screen and (max-width: 980px) {
+
+  .signup-button, .login-button {
+    padding: 10px;
+    width:17%;
+}
+
+  .main-image {
+
+    .main-buttons {
+    margin-right: 9%;
+
+    .login-button {
+    margin-right: 22%;
+    margin-top: -13em;
+    }
+
+    .signup-button {
+    margin-top: -13em;
+    }
+    }
+}
+}
+
+@media screen and (max-width: 750px) {
+
+  .signup-button, .login-button {
+    font-size: .75em;
+}
+}
+
+@media screen and (max-width: 750px) {
+
+  .signup-button, .login-button {
+    font-size: .75em;
+}
+}
+
+@media screen and (max-width: 575px) {
+    .signup-button, .login-button {
+    font-size: .65em;
+}
+
+  .main-image {
+
+    .main-buttons {
+
+    .login-button {
+    margin-right: 22%;
+    margin-top: -10em;
+    }
+
+    .signup-button {
+    margin-top: -10em;
+    }
+    }
+}
+}
+
+@media screen and (max-width: 410px) {
+    .signup-button, .login-button {
+    font-size: .45em;
+}
 }
 
 .description-bar {
     width: 100%;
-    height: 400px;
+    overflow: hidden;
+    position: relative;
     margin-top: 200px;
     background-color: #F5E2AD;
+    text-align: center;
+
+    p {
+    font-family: "GeosansLight", sans-serif;
+    font-size: 1.625em;
+    color: #453534;
+    }
+
+    h1 {
+    font-family: "Code Bold", sans-serif;
+    font-size: 3em;
+  }
 }
 
 .container {
-    margin: 10em 22% 0 22%;
     text-align: center;
-}
+    overflow: hidden;
+    position: relative;
+    margin-top: -6em;
 
-.middle-container {
-    margin: 10em 15% 0 15%;
-}
+    .indepth-photo img {
+    width: 50%
+    }
 
-.info-one-paragraph, .info-three-paragraph, .social-media-links, {
-    font-family: "GeosansLight", sans-serif;
-    font-size: 1.625em;
-    text-align: left;
-    color: #453534;
-}
-
-.first-paragraph {
-    font-family: "GeosansLight", sans-serif;
-    font-size: 1.625em;
-    color: #453534;
-}
-
-.info-one h1, .info-three h1 {
-    font-family: "Code Bold", sans-serif;
-    font-size: 2.5em;
-    text-align: left;
-}
-
-.first-title h1 {
-    font-family: "Code Bold", sans-serif;
-    font-size: 3em;
-    margin-top: -486px;
-}
-
-.second-paragraph {
-    font-family: "GeosansLight", sans-serif;
-    font-size: 1.625em;
-    color: #453534;
-}
-
-.info-two-paragraph {
-    font-family: "GeosansLight", sans-serif;
-    font-size: 1.625em;
-    text-align: right;
-    color: #453534;
-}
-
- .info-two h1 {
-    font-family: "Code Bold", sans-serif;
-    font-size: 2.5em;
-    text-align: right;
-    color: #453534;
- }
-
-.profiles h1 {
+    .profiles h1 {
     margin-top: 6.125em;
     font-family: "Code Bold", sans-serif;
     font-size: 3em;
+    }
+
+    .second-paragraph {
+    font-family: "GeosansLight", sans-serif;
+    font-size: 1.625em;
+    color: #453534;
+    width: 75%;
+    margin: 0 auto; 
+    }
 }
 
-.indepth-photo img {
-  width: 90%
+@media screen and (max-width: 410px) {
+    .signup-button, .login-button {
+    font-size: .45em;
+}
 }
 
-.info-one {
+.middle-container {
+    // margin: 10em 15% 0 15%;
+    overflow: hidden;
+    position: relative;
+
+    .info-one-paragraph, .info-three-paragraph, .social-media-links, {
+    font-family: "GeosansLight", sans-serif;
+    font-size: 1.625em;
+    text-align: left;
+    color: #453534;
+    }
+
+    .info-one h1, .info-three h1 {
+    font-family: "Code Bold", sans-serif;
+    font-size: 2.5em;
+    text-align: left;
+    }
+
+    .info-two-paragraph {
+    font-family: "GeosansLight", sans-serif;
+    font-size: 1.625em;
+    text-align: right;
+    color: #453534;
+    }
+
+    .info-two h1 {
+    font-family: "Code Bold", sans-serif;
+    font-size: 2.5em;
+    text-align: right;
+    color: #453534;
+    }
+
+    .info-one {
     margin-top: 4.688em;
 
-    h1 {
+      h1 {
         margin: 3.125em 0 0 37%;
-    }
-}
-
-.info-one-paragraph {
-    p {
-        margin-left: 37%;
-        display: inline-block;
-        color: #453534;
+      }
     }
 
-    img {
-        margin: -2.75em 0 0 -3%;
-        width: 24%;
-        height: 12.5em;
-        position: absolute;
-        border-radius: 170px;
-    }
-}
+    .info-one-paragraph {
 
-.info-two {
+      p {
+          margin-left: 37%;
+          width: 50%;
+          display: inline-block;
+          color: #453534;
+      }
+
+      img {
+          margin: -2.75em 0 0 12%;
+          width: 20%;
+          height: auto;
+          position: absolute;
+          border-radius: 170px;
+      }
+    }
+
+    .info-two {
     margin-top: 4.688em;
 
-    h1 {
-        margin: 3.125em 35% 0 0;
-    }
-}
-
-.info-two-paragraph {
-    p {
-        margin-right: 35%;
-        color: #453534;
+      h1 {
+          margin: 3.125em 35% 0 0;
+      }
     }
 
-    img {
-        width: 24%;
-        height: 12.5em;
-        position: absolute;
-        margin: -3.188em 0 0 -20%;
-        border-radius: 170px;
-    }
-}
+    .info-two-paragraph {
+      p {
+          margin-left: 15%;
+          width: 50%;
+          color: #453534;
+      }
 
-.info-three {
+      img {
+          width: 20%;
+          height: auto;
+          position: absolute;
+          margin: -3.188em 0 0 -30%;
+          border-radius: 170px;
+      }
+    }
+
+    .info-three {
     margin-top: 4.688em;
 
-    h1 {
-        margin: 3.125em 0 0 35%;
+      h1 {
+          margin: 3.125em 0 0 37%;
+      }
+    }
+
+    .info-three-paragraph {
+      p {
+          margin-left: 37%;
+          width: 50%;
+          color: #453534;
+      }
+
+      img {
+          width: 20%;
+          height: auto;
+          position: absolute;
+          margin: -4.188em 0 0 12%;
+          border-radius: 170px;
+      }
     }
 }
 
-.info-three-paragraph {
-    p {
-        margin-left: 35%;
-        color: #453534;
-    }
 
-    img {
-        width: 24%;
-        height: 12.5em;
-        position: absolute;
-        margin: -4.188em 0 0 -5%;
-        border-radius: 170px;
-    }
-}
 
 .middle-image {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%; 
+    background-color: #BEDCC4;
+    margin-top: 8em;
+
     h1 {
-        font-family: "Code Bold", sans-serif;
-        font-size: 5em;
-        color: white;
-        margin: 1em 0 0 22%;
-        position: absolute;
+      font-family: "Code Bold", sans-serif;
+      font-size: 5em;
+      color: white;
+      margin-top: 1em;
+      width: 100%;
     }
 
     h2 {
-        font-family: "Code Bold", sans-serif;
-        font-size: 3.4em;
-        color: white;
-        margin: 3.5em 0 0 5%;
-        position: absolute;
+      font-family: "Code Bold", sans-serif;
+      font-size: 3.4em;
+      color: white;
+      margin-top: .5em;
+      width: 100%;
+    }
+
+    .signup-button-two {
+      margin: 0 auto;
+      margin-bottom: 4em;
+      display: block;
     }
 }
 
-.breaker-bar {
-    margin-top: 10.250em;
-    width: 100%;
-    height: 23.750em;
-    background-color: #BEDCC4;
-}
+.vendor-container {
 
-.container-two {
-    margin: 3.125em 20% 3.125em 20%;
-}
+    overflow: hidden;
+    position: relative; 
 
-.vendor-profiles {
-    text-align: center;
-    font-family: "Code Bold", sans-serif;
-    margin: 20% -5% 5% 349px;
-    font-size: 1.563em;
-}
+    .vendor-profiles {
+      float: right; 
+      width: 50%;
+      margin: 13em 7% 0 0;
 
-.vendor-image {
-    p {
-        margin-left: 47%;
-        margin-top: -3%;
-        display: inline-block;
+      h1 {
+        font-family: "Code Bold", sans-serif;
+        font-size: 3em;
+      }
+      
+      p {
         font-family: "GeosansLight", sans-serif;
         font-size: 1.625em;
         color: #453534;
+      }
     }
 
-    img {
-        width: 31%;
-        position: absolute;
-        margin: -0.188em 0 0 -3%;
-    }
-}
+    .vendor-image {
+      float: left; 
 
-.vendor-examples {
-    margin-top: 20%;
-    text-align: center;
-    color: #453534;
-
-    img {
-        width: 75%;
-        margin-top: -4.063em;
+      img {
+        width: 76%;
+        margin: 14em 0 0 26%;
+      }
     }
 }
 
-.features-title h1 {
-    text-align: center;
-    margin-top: 25%;
-    font-size: 3em;
-    font-family: "Code Bold", sans-serif;
-}
+.categories-page {
+    width: 100%; 
+    overflow: hidden;
+    position: relative;
+    margin-top: 5em;
 
-.features {
-    display: inline-block;
-    margin-left: -15%;
-    font-family: "GeosansLight", sans-serif;
 
-    h3{
-        margin-left: 0%;
-        font-size: 2em;
-        font-weight: bold;
+    h1 {
+        font-family: "Code Bold", sans-serif;
+        font-size: 3em;
         color: #453534;
+        text-align: center;
+        margin: 2em;
     }
 
-    li {
-      font-size: 1.5em;
+    .table-one table {
+      width: 75%;
+    }
+
+    .table-one {
+      margin-right: -15%;
+      margin-left: 8%;
+    }
+
+    .table-two table {
+      width: 90%;
+    }
+
+    .table-two {
+      margin-right:  -9%;
+      margin-left: 8%;
+    }
+
+    table { 
+      border-collapse: collapse; 
+      margin: 0 0 6em 7%;
+    }
+
+    tr { 
       color: #453534;
-    }
-}
-
-.features-two {
-    display: inline-block;
-    margin-left: 16%;
-    font-family: "GeosansLight", sans-serif;
-
-    h3{
-        font-size: 2em;
-        color: #453534;
-    }
-
-    li {
+      font-family: "GeosansLight", sans-serif;
       font-size: 1.5em;
-      color: #453534;
-    }
-}
-
-.features-three {
-    display: inline-block;
-    margin-left: 10%;
-    font-family: "GeosansLight", sans-serif;
-    position: absolute;
-
-    h3{
-        font-size: 2em;
-        color: #453534;
     }
 
-    li {
-      font-size: 1.5em;
-      color: #453534;
+    th {  
+      color: #453534; 
+      font-family: "GeosansLight", sans-serif;
+      font-size: 2em;
+    }
+
+    td, th { 
+      padding: 6px; 
+      text-align: left; 
     }
 }
 
