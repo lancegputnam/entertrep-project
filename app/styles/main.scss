@@ -12,6 +12,10 @@ text-decoration:none;}
   font-family: 'entypo', sans-serif;
 }
 
+html {
+    min-width: 1400px;
+}
+
 body {
     background: #FFFFFF;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -173,88 +177,88 @@ div.menu_wrap{
 }
 
 
-@media screen and (max-width: 1230px) {
-  .main-image {
+// @media screen and (max-width: 1230px) {
+//   .main-image {
 
-    .main-buttons {
-    margin-right: 9%;
+//     .main-buttons {
+//     margin-right: 9%;
 
-    .login-button {
-    margin-right: 18%;
-    margin-top: -15em;
-    }
+//     .login-button {
+//     margin-right: 18%;
+//     margin-top: -15em;
+//     }
 
-    .signup-button {
-    margin-top: -15em;
-    }
-    }
-}
-}
+//     .signup-button {
+//     margin-top: -15em;
+//     }
+//     }
+// }
+// }
 
-@media screen and (max-width: 980px) {
+// @media screen and (max-width: 980px) {
 
-  .signup-button, .login-button {
-    padding: 10px;
-    width:17%;
-}
+//   .signup-button, .login-button {
+//     padding: 10px;
+//     width:17%;
+// }
 
-  .main-image {
+//   .main-image {
 
-    .main-buttons {
-    margin-right: 9%;
+//     .main-buttons {
+//     margin-right: 9%;
 
-    .login-button {
-    margin-right: 22%;
-    margin-top: -13em;
-    }
+//     .login-button {
+//     margin-right: 22%;
+//     margin-top: -13em;
+//     }
 
-    .signup-button {
-    margin-top: -13em;
-    }
-    }
-}
-}
+//     .signup-button {
+//     margin-top: -13em;
+//     }
+//     }
+// }
+// }
 
-@media screen and (max-width: 750px) {
+// @media screen and (max-width: 750px) {
 
-  .signup-button, .login-button {
-    font-size: .75em;
-}
-}
+//   .signup-button, .login-button {
+//     font-size: .75em;
+// }
+// }
 
-@media screen and (max-width: 750px) {
+// @media screen and (max-width: 750px) {
 
-  .signup-button, .login-button {
-    font-size: .75em;
-}
-}
+//   .signup-button, .login-button {
+//     font-size: .75em;
+// }
+// }
 
-@media screen and (max-width: 575px) {
-    .signup-button, .login-button {
-    font-size: .65em;
-}
+// @media screen and (max-width: 575px) {
+//     .signup-button, .login-button {
+//     font-size: .65em;
+// }
 
-  .main-image {
+//   .main-image {
 
-    .main-buttons {
+//     .main-buttons {
 
-    .login-button {
-    margin-right: 22%;
-    margin-top: -10em;
-    }
+//     .login-button {
+//     margin-right: 22%;
+//     margin-top: -10em;
+//     }
 
-    .signup-button {
-    margin-top: -10em;
-    }
-    }
-}
-}
+//     .signup-button {
+//     margin-top: -10em;
+//     }
+//     }
+// }
+// }
 
-@media screen and (max-width: 410px) {
-    .signup-button, .login-button {
-    font-size: .45em;
-}
-}
+// @media screen and (max-width: 410px) {
+//     .signup-button, .login-button {
+//     font-size: .45em;
+// }
+// }
 
 .description-bar {
     width: 100%;
@@ -301,11 +305,11 @@ div.menu_wrap{
     }
 }
 
-@media screen and (max-width: 410px) {
-    .signup-button, .login-button {
-    font-size: .45em;
-}
-}
+// @media screen and (max-width: 410px) {
+//     .signup-button, .login-button {
+//     font-size: .45em;
+// }
+// }
 
 .middle-container {
     // margin: 10em 15% 0 15%;
@@ -474,7 +478,7 @@ div.menu_wrap{
 
       img {
         width: 76%;
-        margin: 14em 0 0 26%;
+        margin: 14em 0 0 22%;
       }
     }
 }
